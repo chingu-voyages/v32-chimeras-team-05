@@ -1,12 +1,12 @@
 import { Container } from "react-bootstrap";
-import SearchInput from "./components/SearchInput";
+import Search from "./components/Search";
 
 function App() {
   return (
     <>
       <Container>
         <h1>Nudev Frontend</h1>
-        <SearchInput />
+        <Search />
       </Container>
     </>
   );
