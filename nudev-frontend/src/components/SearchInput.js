@@ -8,8 +8,8 @@ const SearchInput = () => {
     <div>
       <InputGroup className="mb-3">
         <FormControl
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          placeholder="Start by searching here..."
+          aria-label="Start by searching here..."
           aria-describedby="basic-addon2"
         />
         <Button variant="outline-secondary" id="button-addon2">
