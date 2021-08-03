@@ -3863,7 +3863,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:5.0.2":
+"bootstrap@npm:^5.0.2":
   version: 5.0.2
   resolution: "bootstrap@npm:5.0.2"
   peerDependencies:
@@ -10247,10 +10247,11 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
-    bootstrap: 5.0.2
+    bootstrap: ^5.0.2
     react: ^17.0.2
-    react-bootstrap: next
+    react-bootstrap: ^1.6.1
     react-dom: ^17.0.2
+    react-icons: ^4.2.0
     react-scripts: 4.0.3
     web-vitals: ^1.0.1
   languageName: unknown
@@ -12125,9 +12126,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-bootstrap@npm:next":
-  version: 2.0.0-beta.4
-  resolution: "react-bootstrap@npm:2.0.0-beta.4"
+"react-bootstrap@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "react-bootstrap@npm:1.6.1"
   dependencies:
     "@babel/runtime": ^7.14.0
     "@restart/context": ^2.1.4
@@ -12142,14 +12143,14 @@ fsevents@^1.2.7:
     invariant: ^2.2.4
     prop-types: ^15.7.2
     prop-types-extra: ^1.1.0
-    react-overlays: ^5.1.1
+    react-overlays: ^5.0.1
     react-transition-group: ^4.4.1
     uncontrollable: ^7.2.1
     warning: ^4.0.3
   peerDependencies:
-    react: ">=16.14.0"
-    react-dom: ">=16.14.0"
-  checksum: 667ad7bc311da676b768cab7c31d62c82b812706826e895fef46bf34c5b06d31f20a0646474bbd05a045fc3df8e9eedf08eb38d9c4824327738d39bc098d2256
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 45f64d6a7e558cf7c31437b4c1ffe7a78162b53fa2746835ac1389474f2ed61205659201bd3667d86b829526ca6545a29824ecee380a38b35094c9df17f75f3c
   languageName: node
   linkType: hard
 
@@ -12205,6 +12206,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "react-icons@npm:4.2.0"
+  peerDependencies:
+    react: "*"
+  checksum: 2b42d9b0ac85a57f8de28819b5f452b2c851f4caec09a855596d47557b775a434802fce1f3dc3811eebf46cf4d7c79fa4650330d5772345d6839f86c83afc01d
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.3.2, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -12226,7 +12236,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-overlays@npm:^5.1.1":
+"react-overlays@npm:^5.0.1":
   version: 5.1.1
   resolution: "react-overlays@npm:5.1.1"
   dependencies:

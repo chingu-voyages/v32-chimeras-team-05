@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SearchTag from "./SearchTag";
+import { Container } from "react-bootstrap";
 
 const SearchTags = ({ updateTagArray }) => {
   const tags = [
@@ -20,7 +21,7 @@ const SearchTags = ({ updateTagArray }) => {
   ];
 
   return (
-    <div>
+    <Container className="searchTags">
       {tags.map(
         (tag) =>
           (tag = (
@@ -31,7 +32,7 @@ const SearchTags = ({ updateTagArray }) => {
             />
           ))
       )}
-    </div>
+    </Container>
   );
 };
 
