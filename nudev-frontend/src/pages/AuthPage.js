@@ -1,7 +1,7 @@
 import React from "react";
 
-const Resources = () => {
+const AuthPage = () => {
   return <div></div>;
 };
 
-export default Resources;
+export default AuthPage;
