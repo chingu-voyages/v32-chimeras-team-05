@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import SearchInput from "./SearchInput";
 import SearchTags from "./SearchTags";
-import { mockData } from "../mockdata/blogPost";
+import { mockData } from "../../mockdata/blogPost";
 import {
   filterSearchTermHelper,
   filterTagArrayHelper,
-} from "../helpers/searchHelpers";
+} from "../../helpers/searchHelpers";
 
 import SearchResults from "./SearchResults";
 
