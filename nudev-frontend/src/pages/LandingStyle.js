@@ -1,15 +1,9 @@
 import styled from "styled-components";
+import { colors, PageMain } from "../styles/SharedStyles";
 
-const colors = {
-  lightGrey: "rgba(100, 100, 100, 0.5)",
-  grey: "rgba(100, 100, 100, 1)",
-};
-
-export const LandingMain = styled.main`
-  display: grid;
+export const LandingMain = styled(PageMain)`
   justify-content: center;
   align-content: center;
-  min-height: 85vh;
 `;
 
 export const LandingHeadline = styled.section`

@@ -18,8 +18,8 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="mr-auto">
-          {navList.map((navItem) => (
-            <Nav.Link as={Link} to={navItem.path}>
+          {navList.map((navItem, idx) => (
+            <Nav.Link key={`nav-item-${idx}`} as={Link} to={navItem.path}>
               {navItem.title}
             </Nav.Link>
           ))}
