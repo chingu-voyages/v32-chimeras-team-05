@@ -11,16 +11,17 @@ export const SignUpStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid black;
+    /* border: solid black; */
     /* min-width: 40vh; */
     input {
       min-width: 500px;
     }
     .text-muted {
-      padding: 20px;
+      font-size: 20px;
+      /* padding: 20px; */
     }
     .form-label {
-      font-size: 10px;
+      font-size: 15px;
     }
     button {
       width: 60%;

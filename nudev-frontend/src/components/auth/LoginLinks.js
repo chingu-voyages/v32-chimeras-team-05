@@ -1,12 +1,18 @@
 import React from "react";
 import LoginLink from "./LoginLink";
 import { FaGoogle } from "react-icons/fa";
-import { LoginLinkStyle } from "./LoginLinkStyle";
+import { LoginLinksStyle } from "./LoginLinkStyle";
 
-const LoginLinks = ({ links }) => {
+const LoginLinks = ({ showSignUp, setShowSignUp, links }) => {
   return (
-    <div>
-      <h1>Test</h1>
+    <LoginLinksStyle>
+      <h1>{showSignUp}</h1>
+      <p onClick={() => setShowSignUp(!showSignUp)} className="link text-muted">
+        {showSignUp
+          ? "Already have an account? Click here to login"
+          : "Don't have an account? Click here to Sign Up"}
+      </p>
+      <p className="text-muted">Or</p>
       {links.map((link) => (
         <LoginLink
           name={link.name}
@@ -15,7 +21,7 @@ const LoginLinks = ({ links }) => {
           key={link.text}
         />
       ))}
-    </div>
+    </LoginLinksStyle>
   );
 };
 

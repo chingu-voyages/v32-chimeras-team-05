@@ -1,16 +1,29 @@
 import styled from "styled-components";
 
+export const LoginLinksStyle = styled.div`
+  height: 100%;
+  padding-top: 5px;
+
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  p {
+    text-align: center;
+  }
+`;
+
 export const LoginLinkStyle = styled.div`
   display: flex;
-  border: solid black;
 
   align-items: center;
   cursor: pointer;
   background-color: ${(props) => props.color};
   color: white;
+  margin: 20px;
   .icon {
     font-size: 20px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0px 7px 10px;
   }
   .line {
     display: inline-block;

@@ -6,9 +6,14 @@ export const AuthMain = styled.div`
   display: grid;
   justify-content: center;
   align-items: center;
-  border: solid black;
+  /* border: solid black; */
 `;
 
-export const AuthSignUp = styled.div`
-  width: 500px;
+export const AuthContainer = styled.div`
+  padding: 20px;
+  border: solid thin black;
 `;
+
+// export const AuthSignUp = styled.div`
+//   width: 500px;
+// `;
