@@ -5,22 +5,33 @@ export const ProfilePictureStyled = styled.div`
     position: relative;
     display: inline-block;
     cursor: pointer;
-    /* border: solid black; */
+    border: solid black;
     width: 200px;
     height: 200px;
-    &:hover img {
-      transform: scale(1.1);
+    border-radius: 50%;
+    background: white;
+    background-image: url(${(props) => props.photoURL});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover {
+      background: white;
+      transform: scale(1.01);
       transition: opacity 0.4s ease-in-out;
-      opacity: 50%;
+      transition: background-color 1s ease-in-out;
+      opacity: 80%;
     }
     &:hover .caption {
       opacity: 100%;
     }
 
     img {
-      display: block;
-      border-radius: 100%;
       max-width: 100%;
+      height: 100%;
+
+      /* object-fit: contain; */
+      display: block;
+      /* border-radius: 100%; */
 
       opacity: 100%;
 

@@ -1,14 +1,21 @@
 import React from "react";
 import { ProfilePictureStyled } from "./ProfilePictureStyle";
 
-const ProfilePicture = () => {
+const ProfilePicture = ({ currentUser }) => {
+  //   let photoURL =
+  //     "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png";
+  //   if (currentUser) {
+  //     photoURL = currentUser.photoURL;
+  //   }
+  const photoURL =
+    currentUser && currentUser.photoURL !== null
+      ? currentUser.photoURL
+      : "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png";
+
   return (
-    <ProfilePictureStyled>
+    <ProfilePictureStyled photoURL={photoURL}>
       <div className="avatar">
-        <img
-          src="https://img.discogs.com/1WNYfNjQ8rLowx-SUZYiLv0RfEU=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-5049380-1599682542-2398.jpeg.jpg"
-          alt=""
-        ></img>
+        {/* <img src={photoURL} alt=""></img> */}
         <div class="caption">
           <p>Update Profile</p>
         </div>

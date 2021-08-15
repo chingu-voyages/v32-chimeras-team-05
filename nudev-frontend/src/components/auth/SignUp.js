@@ -6,12 +6,15 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { SignUpStyle } from "./SignUpStyle";
+import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
   const { signup } = useAuth();
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
+
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +27,7 @@ const SignUp = () => {
       await signup(emailRef.current.value, passwordRef.current.value);
       const currentUser = firebase.auth().currentUser;
       console.log(currentUser);
+      history.push("/resources");
     } catch {
       console.log("Failed to make account");
     }
