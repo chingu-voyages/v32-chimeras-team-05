@@ -1,25 +1,29 @@
 import React from "react";
-import { Fragment } from "react";
-import { about } from "../mockdata/pageContent.json";
-import { AboutDescription, AboutMain, AboutSection } from "./AboutStyle";
+import { pages } from "../mockdata/pageContent";
+import {
+  AboutDescription,
+  AboutMain,
+  AboutSection,
+  AboutSectionHeader,
+  AboutImage,
+} from "./AboutStyle";
 
 const About = () => {
+  const { about } = pages;
   return (
     <AboutMain>
       {about.sections.map((sectionItem, idx) => (
-        <Fragment key={idx}>
-          <AboutSection col={idx % 2}>
-            <AboutDescription>
-              <h3>{sectionItem.title}</h3>
-              {sectionItem.description.map((sentence, idx) => (
-                <p key={`desc-sentence-${idx}`}>{sentence}</p>
-              ))}
-            </AboutDescription>
-          </AboutSection>
-          <AboutSection col={(idx + 1) % 2}>
-            {sectionItem.image.alt}
-          </AboutSection>
-        </Fragment>
+        <AboutSection key={idx}>
+          <AboutDescription col={idx % 2}>
+            <AboutSectionHeader>{sectionItem.title}</AboutSectionHeader>
+            {sectionItem.description.map((sentence, idx) => (
+              <p key={`desc-sentence-${idx}`}>{sentence}</p>
+            ))}
+          </AboutDescription>
+          <AboutImage col={(idx + 1) % 2}>
+            <img src={sectionItem.image.src} alt={sectionItem.image.alt} />
+          </AboutImage>
+        </AboutSection>
       ))}
     </AboutMain>
   );
