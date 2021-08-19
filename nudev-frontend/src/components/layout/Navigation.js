@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import { useAuth } from "../../contexts/AuthContext";
 
 const navList = [
   { id: 1, title: "About", path: "/about" },
@@ -10,6 +11,8 @@ const navList = [
 ];
 
 const Navigation = () => {
+  // const { logout } = useAuth();
+  // const { currentUser } = useAuth();
   return (
     <Navbar bg="light" expand="lg" className="p-3">
       <Navbar.Brand as={Link} to="/">
