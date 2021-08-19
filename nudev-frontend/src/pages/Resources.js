@@ -1,7 +1,7 @@
-import React from "react";
+import Search from "../components/search/Search";
 
 const Resources = () => {
-  return <div></div>;
+  return <Search />;
 };
 
 export default Resources;
