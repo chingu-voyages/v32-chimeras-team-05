@@ -1,0 +1,334 @@
+{
+  "resources": [
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000000"
+      },
+      "name": "Pre-emptive",
+      "description": "Open-source holistic model",
+      "link": "https://rambler.ru/lacus/morbi/quis.aspx?non=nascetur&lectus=ridiculus&aliquam=mus&sit=etiam&amet=vel&diam=augue&in=vestibulum&magna=rutrum&bibendum=rutrum&imperdiet=neque&nullam=aenean&orci=auctor&pede=gravida&venenatis=sem&non=praesent&sodales=id&sed=massa&tincidunt=id&eu=nisl&felis=venenatis&fusce=lacinia&posuere=aenean&felis=sit&sed=amet&lacus=justo&morbi=morbi&sem=ut&mauris=odio&laoreet=cras&ut=mi&rhoncus=pede&aliquet=malesuada&pulvinar=in&sed=imperdiet&nisl=et&nunc=commodo&rhoncus=vulputate&dui=justo&vel=in&sem=blandit&sed=ultrices&sagittis=enim&nam=lorem&congue=ipsum&risus=dolor&semper=sit&porta=amet&volutpat=consectetuer&quam=adipiscing&pede=elit&lobortis=proin&ligula=interdum&sit=mauris&amet=non&eleifend=ligula&pede=pellentesque&libero=ultrices&quis=phasellus&orci=id&nullam=sapien&molestie=in&nibh=sapien&in=iaculis&lectus=congue&pellentesque=vivamus&at=metus&nulla=arcu&suspendisse=adipiscing&potenti=molestie&cras=hendrerit&in=at&purus=vulputate&eu=vitae&magna=nisl&vulputate=aenean&luctus=lectus&cum=pellentesque&sociis=eget&natoque=nunc&penatibus=donec",
+      "Rating": 2,
+      "tags": ["podcasts", "papers"],
+      "userID": "94-2769909"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000001"
+      },
+      "name": "definition",
+      "description": "Balanced bi-directional infrastructure",
+      "link": "https://fotki.com/blandit/nam/nulla/integer/pede/justo.jpg?vitae=rhoncus&nisl=aliquam&aenean=lacus&lectus=morbi&pellentesque=quis&eget=tortor&nunc=id&donec=nulla&quis=ultrices&orci=aliquet&eget=maecenas&orci=leo&vehicula=odio&condimentum=condimentum&curabitur=id&in=luctus&libero=nec&ut=molestie&massa=sed&volutpat=justo&convallis=pellentesque&morbi=viverra&odio=pede&odio=ac&elementum=diam&eu=cras&interdum=pellentesque&eu=volutpat&tincidunt=dui&in=maecenas&leo=tristique&maecenas=est&pulvinar=et&lobortis=tempus&est=semper&phasellus=est&sit=quam&amet=pharetra&erat=magna&nulla=ac&tempus=consequat&vivamus=metus&in=sapien&felis=ut&eu=nunc&sapien=vestibulum&cursus=ante&vestibulum=ipsum&proin=primis&eu=in&mi=faucibus&nulla=orci&ac=luctus&enim=et&in=ultrices&tempor=posuere",
+      "Rating": 3,
+      "tags": ["jobs", "meetups"],
+      "userID": "14-0971439"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000002"
+      },
+      "name": "user-facing",
+      "description": "Grass-roots stable orchestration",
+      "link": "http://gravatar.com/id/turpis.html?eget=faucibus&orci=orci&vehicula=luctus&condimentum=et&curabitur=ultrices&in=posuere&libero=cubilia&ut=curae&massa=donec&volutpat=pharetra&convallis=magna&morbi=vestibulum&odio=aliquet&odio=ultrices&elementum=erat&eu=tortor&interdum=sollicitudin&eu=mi&tincidunt=sit&in=amet&leo=lobortis&maecenas=sapien&pulvinar=sapien&lobortis=non&est=mi&phasellus=integer&sit=ac&amet=neque&erat=duis&nulla=bibendum&tempus=morbi&vivamus=non&in=quam&felis=nec&eu=dui&sapien=luctus&cursus=rutrum&vestibulum=nulla&proin=tellus&eu=in&mi=sagittis&nulla=dui&ac=vel&enim=nisl&in=duis&tempor=ac&turpis=nibh&nec=fusce&euismod=lacus&scelerisque=purus&quam=aliquet&turpis=at&adipiscing=feugiat&lorem=non&vitae=pretium&mattis=quis&nibh=lectus&ligula=suspendisse&nec=potenti&sem=in",
+      "Rating": 3,
+      "tags": ["podcasts", "news"],
+      "userID": "93-2248098"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000003"
+      },
+      "name": "zero tolerance",
+      "description": "Re-contextualized high-level forecast",
+      "link": "https://netvibes.com/sapien/arcu/sed/augue/aliquam/erat.js?ac=primis&leo=in&pellentesque=faucibus&ultrices=orci&mattis=luctus&odio=et&donec=ultrices&vitae=posuere&nisi=cubilia&nam=curae",
+      "Rating": 1,
+      "tags": ["jobs", "papers"],
+      "userID": "84-2671554"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000004"
+      },
+      "name": "hardware",
+      "description": "Synergized homogeneous capability",
+      "link": "http://marriott.com/platea/dictumst/etiam.js?donec=id&odio=lobortis&justo=convallis&sollicitudin=tortor&ut=risus&suscipit=dapibus&a=augue&feugiat=vel&et=accumsan&eros=tellus&vestibulum=nisi&ac=eu&est=orci&lacinia=mauris&nisi=lacinia&venenatis=sapien&tristique=quis&fusce=libero&congue=nullam&diam=sit&id=amet&ornare=turpis&imperdiet=elementum&sapien=ligula&urna=vehicula&pretium=consequat&nisl=morbi&ut=a&volutpat=ipsum&sapien=integer&arcu=a&sed=nibh&augue=in&aliquam=quis&erat=justo&volutpat=maecenas&in=rhoncus",
+      "Rating": 1,
+      "tags": ["news", "papers"],
+      "userID": "71-5449615"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000005"
+      },
+      "name": "4th generation",
+      "description": "Grass-roots upward-trending access",
+      "link": "https://google.cn/nunc/nisl/duis.jpg?cursus=arcu&urna=adipiscing&ut=molestie",
+      "Rating": 1,
+      "tags": ["tutorials", "news"],
+      "userID": "75-8599314"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000006"
+      },
+      "name": "Vision-oriented",
+      "description": "Customizable bandwidth-monitored local area network",
+      "link": "https://mit.edu/vivamus/in.js?non=sed&sodales=sagittis&sed=nam&tincidunt=congue&eu=risus&felis=semper&fusce=porta&posuere=volutpat&felis=quam&sed=pede&lacus=lobortis&morbi=ligula&sem=sit&mauris=amet&laoreet=eleifend&ut=pede&rhoncus=libero&aliquet=quis&pulvinar=orci&sed=nullam&nisl=molestie&nunc=nibh&rhoncus=in&dui=lectus&vel=pellentesque&sem=at&sed=nulla&sagittis=suspendisse&nam=potenti&congue=cras&risus=in&semper=purus&porta=eu&volutpat=magna&quam=vulputate&pede=luctus&lobortis=cum&ligula=sociis&sit=natoque&amet=penatibus&eleifend=et&pede=magnis&libero=dis&quis=parturient&orci=montes&nullam=nascetur&molestie=ridiculus&nibh=mus&in=vivamus&lectus=vestibulum&pellentesque=sagittis&at=sapien&nulla=cum&suspendisse=sociis&potenti=natoque&cras=penatibus&in=et&purus=magnis&eu=dis&magna=parturient&vulputate=montes&luctus=nascetur&cum=ridiculus&sociis=mus&natoque=etiam",
+      "Rating": 1,
+      "tags": ["tutorials", "podcasts"],
+      "userID": "22-2888338"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000007"
+      },
+      "name": "matrix",
+      "description": "Versatile well-modulated customer loyalty",
+      "link": "http://blogs.com/faucibus.png?libero=eleifend&quis=luctus&orci=ultricies&nullam=eu&molestie=nibh&nibh=quisque&in=id&lectus=justo&pellentesque=sit&at=amet&nulla=sapien&suspendisse=dignissim&potenti=vestibulum&cras=vestibulum&in=ante&purus=ipsum&eu=primis&magna=in&vulputate=faucibus&luctus=orci&cum=luctus&sociis=et&natoque=ultrices&penatibus=posuere&et=cubilia&magnis=curae&dis=nulla&parturient=dapibus&montes=dolor&nascetur=vel&ridiculus=est&mus=donec&vivamus=odio&vestibulum=justo&sagittis=sollicitudin&sapien=ut&cum=suscipit&sociis=a&natoque=feugiat&penatibus=et&et=eros&magnis=vestibulum&dis=ac&parturient=est&montes=lacinia&nascetur=nisi&ridiculus=venenatis&mus=tristique&etiam=fusce&vel=congue&augue=diam&vestibulum=id&rutrum=ornare&rutrum=imperdiet&neque=sapien&aenean=urna&auctor=pretium&gravida=nisl",
+      "Rating": 3,
+      "tags": ["tutorials", "moocs"],
+      "userID": "56-7759442"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000008"
+      },
+      "name": "Managed",
+      "description": "Cross-platform well-modulated neural-net",
+      "link": "http://blogger.com/ipsum.json?ut=semper&erat=est&id=quam&mauris=pharetra&vulputate=magna&elementum=ac&nullam=consequat&varius=metus&nulla=sapien&facilisi=ut&cras=nunc&non=vestibulum&velit=ante&nec=ipsum&nisi=primis&vulputate=in&nonummy=faucibus&maecenas=orci&tincidunt=luctus&lacus=et&at=ultrices&velit=posuere&vivamus=cubilia&vel=curae&nulla=mauris&eget=viverra&eros=diam&elementum=vitae&pellentesque=quam&quisque=suspendisse&porta=potenti&volutpat=nullam&erat=porttitor&quisque=lacus&erat=at&eros=turpis&viverra=donec&eget=posuere&congue=metus&eget=vitae&semper=ipsum&rutrum=aliquam&nulla=non&nunc=mauris&purus=morbi&phasellus=non&in=lectus&felis=aliquam&donec=sit&semper=amet&sapien=diam&a=in&libero=magna&nam=bibendum&dui=imperdiet&proin=nullam&leo=orci&odio=pede&porttitor=venenatis&id=non&consequat=sodales",
+      "Rating": 5,
+      "tags": ["papers", "news"],
+      "userID": "45-1698589"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000009"
+      },
+      "name": "moratorium",
+      "description": "Seamless homogeneous complexity",
+      "link": "https://census.gov/curabitur/convallis/duis.aspx?felis=in&sed=est&lacus=risus&morbi=auctor&sem=sed&mauris=tristique&laoreet=in&ut=tempus&rhoncus=sit&aliquet=amet&pulvinar=sem&sed=fusce&nisl=consequat&nunc=nulla&rhoncus=nisl&dui=nunc&vel=nisl&sem=duis&sed=bibendum&sagittis=felis&nam=sed&congue=interdum&risus=venenatis&semper=turpis&porta=enim&volutpat=blandit&quam=mi&pede=in&lobortis=porttitor&ligula=pede&sit=justo&amet=eu&eleifend=massa&pede=donec&libero=dapibus&quis=duis&orci=at&nullam=velit&molestie=eu&nibh=est&in=congue&lectus=elementum&pellentesque=in&at=hac&nulla=habitasse&suspendisse=platea&potenti=dictumst&cras=morbi&in=vestibulum&purus=velit&eu=id&magna=pretium&vulputate=iaculis&luctus=diam&cum=erat&sociis=fermentum&natoque=justo&penatibus=nec&et=condimentum&magnis=neque&dis=sapien&parturient=placerat&montes=ante&nascetur=nulla&ridiculus=justo&mus=aliquam&vivamus=quis&vestibulum=turpis&sagittis=eget&sapien=elit&cum=sodales&sociis=scelerisque&natoque=mauris&penatibus=sit&et=amet&magnis=eros&dis=suspendisse&parturient=accumsan&montes=tortor&nascetur=quis&ridiculus=turpis&mus=sed&etiam=ante&vel=vivamus&augue=tortor",
+      "Rating": 4,
+      "tags": ["podcasts", "meetups"],
+      "userID": "53-4199029"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000a"
+      },
+      "name": "matrices",
+      "description": "Assimilated next generation forecast",
+      "link": "http://odnoklassniki.ru/id/luctus.xml?luctus=non&et=ligula&ultrices=pellentesque&posuere=ultrices&cubilia=phasellus&curae=id&nulla=sapien&dapibus=in&dolor=sapien&vel=iaculis&est=congue&donec=vivamus&odio=metus&justo=arcu&sollicitudin=adipiscing&ut=molestie&suscipit=hendrerit&a=at&feugiat=vulputate&et=vitae&eros=nisl&vestibulum=aenean&ac=lectus&est=pellentesque&lacinia=eget&nisi=nunc&venenatis=donec&tristique=quis&fusce=orci&congue=eget&diam=orci&id=vehicula&ornare=condimentum&imperdiet=curabitur",
+      "Rating": 1,
+      "tags": ["meetups", "blogs"],
+      "userID": "98-7707722"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000b"
+      },
+      "name": "Grass-roots",
+      "description": "Ergonomic well-modulated matrices",
+      "link": "https://noaa.gov/justo/lacinia/eget/tincidunt/eget.xml?dictumst=gravida&aliquam=sem&augue=praesent&quam=id&sollicitudin=massa&vitae=id&consectetuer=nisl&eget=venenatis&rutrum=lacinia&at=aenean&lorem=sit&integer=amet&tincidunt=justo&ante=morbi&vel=ut&ipsum=odio&praesent=cras&blandit=mi&lacinia=pede&erat=malesuada&vestibulum=in&sed=imperdiet&magna=et&at=commodo&nunc=vulputate&commodo=justo&placerat=in&praesent=blandit&blandit=ultrices&nam=enim&nulla=lorem&integer=ipsum&pede=dolor&justo=sit",
+      "Rating": 1,
+      "tags": ["meetups", "papers"],
+      "userID": "53-7730176"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000c"
+      },
+      "name": "architecture",
+      "description": "Total secondary help-desk",
+      "link": "https://sciencedaily.com/ligula.xml?eget=at&tincidunt=vulputate&eget=vitae&tempus=nisl&vel=aenean&pede=lectus&morbi=pellentesque&porttitor=eget&lorem=nunc&id=donec&ligula=quis&suspendisse=orci&ornare=eget&consequat=orci&lectus=vehicula&in=condimentum&est=curabitur&risus=in&auctor=libero&sed=ut&tristique=massa&in=volutpat&tempus=convallis&sit=morbi&amet=odio&sem=odio&fusce=elementum&consequat=eu&nulla=interdum&nisl=eu&nunc=tincidunt&nisl=in&duis=leo&bibendum=maecenas&felis=pulvinar&sed=lobortis&interdum=est&venenatis=phasellus&turpis=sit&enim=amet&blandit=erat&mi=nulla&in=tempus&porttitor=vivamus&pede=in&justo=felis&eu=eu&massa=sapien&donec=cursus&dapibus=vestibulum&duis=proin&at=eu&velit=mi&eu=nulla&est=ac&congue=enim&elementum=in&in=tempor&hac=turpis&habitasse=nec&platea=euismod&dictumst=scelerisque&morbi=quam&vestibulum=turpis&velit=adipiscing",
+      "Rating": 0,
+      "tags": ["jobs", "papers"],
+      "userID": "63-1443826"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000d"
+      },
+      "name": "local",
+      "description": "Synergized contextually-based website",
+      "link": "http://timesonline.co.uk/suspendisse/potenti/cras/in.html?orci=in&luctus=felis&et=donec&ultrices=semper&posuere=sapien&cubilia=a&curae=libero&duis=nam&faucibus=dui&accumsan=proin&odio=leo&curabitur=odio&convallis=porttitor&duis=id",
+      "Rating": 1,
+      "tags": ["meetups", "blogs"],
+      "userID": "67-7482198"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000e"
+      },
+      "name": "adapter",
+      "description": "Multi-lateral executive system engine",
+      "link": "http://themeforest.net/est/congue/elementum/in.jsp?iaculis=convallis&congue=eget&vivamus=eleifend&metus=luctus&arcu=ultricies&adipiscing=eu&molestie=nibh&hendrerit=quisque&at=id&vulputate=justo&vitae=sit&nisl=amet&aenean=sapien&lectus=dignissim&pellentesque=vestibulum&eget=vestibulum&nunc=ante&donec=ipsum&quis=primis&orci=in&eget=faucibus&orci=orci&vehicula=luctus&condimentum=et&curabitur=ultrices&in=posuere&libero=cubilia&ut=curae&massa=nulla&volutpat=dapibus&convallis=dolor&morbi=vel&odio=est&odio=donec&elementum=odio&eu=justo&interdum=sollicitudin&eu=ut&tincidunt=suscipit&in=a&leo=feugiat&maecenas=et&pulvinar=eros&lobortis=vestibulum&est=ac&phasellus=est&sit=lacinia&amet=nisi&erat=venenatis&nulla=tristique&tempus=fusce&vivamus=congue&in=diam&felis=id&eu=ornare&sapien=imperdiet&cursus=sapien&vestibulum=urna&proin=pretium&eu=nisl&mi=ut&nulla=volutpat&ac=sapien&enim=arcu&in=sed&tempor=augue&turpis=aliquam&nec=erat&euismod=volutpat&scelerisque=in&quam=congue&turpis=etiam&adipiscing=justo&lorem=etiam&vitae=pretium&mattis=iaculis&nibh=justo&ligula=in&nec=hac&sem=habitasse&duis=platea",
+      "Rating": 3,
+      "tags": ["blogs", "news"],
+      "userID": "84-6893816"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400000f"
+      },
+      "name": "matrices",
+      "description": "Profit-focused solution-oriented matrices",
+      "link": "https://cdbaby.com/sed/augue/aliquam.xml?nullam=accumsan&varius=tortor&nulla=quis&facilisi=turpis&cras=sed&non=ante&velit=vivamus&nec=tortor&nisi=duis&vulputate=mattis&nonummy=egestas&maecenas=metus&tincidunt=aenean&lacus=fermentum&at=donec&velit=ut&vivamus=mauris&vel=eget&nulla=massa&eget=tempor&eros=convallis&elementum=nulla&pellentesque=neque&quisque=libero&porta=convallis&volutpat=eget&erat=eleifend&quisque=luctus&erat=ultricies&eros=eu&viverra=nibh&eget=quisque&congue=id&eget=justo&semper=sit&rutrum=amet&nulla=sapien&nunc=dignissim&purus=vestibulum&phasellus=vestibulum&in=ante&felis=ipsum&donec=primis&semper=in&sapien=faucibus&a=orci&libero=luctus&nam=et&dui=ultrices&proin=posuere&leo=cubilia&odio=curae&porttitor=nulla&id=dapibus&consequat=dolor&in=vel&consequat=est&ut=donec&nulla=odio&sed=justo&accumsan=sollicitudin&felis=ut&ut=suscipit&at=a&dolor=feugiat&quis=et&odio=eros&consequat=vestibulum&varius=ac&integer=est&ac=lacinia&leo=nisi&pellentesque=venenatis&ultrices=tristique&mattis=fusce&odio=congue&donec=diam&vitae=id&nisi=ornare&nam=imperdiet&ultrices=sapien&libero=urna",
+      "Rating": 5,
+      "tags": ["meetups", "moocs"],
+      "userID": "78-1640331"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000010"
+      },
+      "name": "migration",
+      "description": "Vision-oriented 6th generation initiative",
+      "link": "https://goo.ne.jp/faucibus/cursus/urna/ut/tellus.xml?dui=quam&nec=nec&nisi=dui&volutpat=luctus&eleifend=rutrum&donec=nulla&ut=tellus&dolor=in&morbi=sagittis&vel=dui&lectus=vel&in=nisl&quam=duis&fringilla=ac&rhoncus=nibh&mauris=fusce&enim=lacus&leo=purus&rhoncus=aliquet&sed=at&vestibulum=feugiat&sit=non&amet=pretium&cursus=quis&id=lectus&turpis=suspendisse&integer=potenti&aliquet=in&massa=eleifend&id=quam&lobortis=a&convallis=odio&tortor=in&risus=hac&dapibus=habitasse&augue=platea&vel=dictumst&accumsan=maecenas&tellus=ut&nisi=massa&eu=quis&orci=augue&mauris=luctus&lacinia=tincidunt&sapien=nulla&quis=mollis&libero=molestie&nullam=lorem&sit=quisque&amet=ut&turpis=erat&elementum=curabitur&ligula=gravida&vehicula=nisi&consequat=at&morbi=nibh&a=in&ipsum=hac&integer=habitasse&a=platea&nibh=dictumst&in=aliquam&quis=augue&justo=quam&maecenas=sollicitudin&rhoncus=vitae&aliquam=consectetuer&lacus=eget&morbi=rutrum&quis=at&tortor=lorem",
+      "Rating": 3,
+      "tags": ["tutorials", "podcasts"],
+      "userID": "13-1317458"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000011"
+      },
+      "name": "optimal",
+      "description": "Multi-lateral next generation Graphic Interface",
+      "link": "http://opensource.org/congue/diam/id/ornare/imperdiet/sapien/urna.jpg?varius=ut&nulla=at&facilisi=dolor&cras=quis&non=odio&velit=consequat&nec=varius&nisi=integer&vulputate=ac&nonummy=leo&maecenas=pellentesque&tincidunt=ultrices&lacus=mattis&at=odio&velit=donec&vivamus=vitae&vel=nisi&nulla=nam&eget=ultrices&eros=libero&elementum=non&pellentesque=mattis&quisque=pulvinar&porta=nulla&volutpat=pede&erat=ullamcorper&quisque=augue&erat=a&eros=suscipit&viverra=nulla&eget=elit&congue=ac&eget=nulla&semper=sed&rutrum=vel&nulla=enim&nunc=sit&purus=amet&phasellus=nunc&in=viverra",
+      "Rating": 3,
+      "tags": ["jobs", "papers"],
+      "userID": "28-3454778"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000012"
+      },
+      "name": "User-friendly",
+      "description": "User-centric incremental adapter",
+      "link": "http://omniture.com/felis/ut/at/dolor.html?libero=congue&nullam=elementum&sit=in&amet=hac&turpis=habitasse&elementum=platea&ligula=dictumst&vehicula=morbi&consequat=vestibulum&morbi=velit&a=id&ipsum=pretium&integer=iaculis&a=diam&nibh=erat&in=fermentum&quis=justo&justo=nec&maecenas=condimentum&rhoncus=neque&aliquam=sapien&lacus=placerat&morbi=ante&quis=nulla&tortor=justo&id=aliquam&nulla=quis&ultrices=turpis&aliquet=eget&maecenas=elit&leo=sodales&odio=scelerisque&condimentum=mauris&id=sit&luctus=amet&nec=eros&molestie=suspendisse&sed=accumsan&justo=tortor&pellentesque=quis&viverra=turpis&pede=sed&ac=ante&diam=vivamus&cras=tortor&pellentesque=duis&volutpat=mattis&dui=egestas&maecenas=metus&tristique=aenean&est=fermentum&et=donec&tempus=ut&semper=mauris&est=eget&quam=massa&pharetra=tempor&magna=convallis&ac=nulla&consequat=neque&metus=libero&sapien=convallis&ut=eget&nunc=eleifend&vestibulum=luctus&ante=ultricies&ipsum=eu&primis=nibh&in=quisque&faucibus=id&orci=justo&luctus=sit&et=amet&ultrices=sapien&posuere=dignissim&cubilia=vestibulum&curae=vestibulum&mauris=ante&viverra=ipsum&diam=primis&vitae=in&quam=faucibus&suspendisse=orci&potenti=luctus&nullam=et&porttitor=ultrices&lacus=posuere&at=cubilia&turpis=curae&donec=nulla&posuere=dapibus&metus=dolor&vitae=vel&ipsum=est&aliquam=donec&non=odio",
+      "Rating": 1,
+      "tags": ["news", "podcasts"],
+      "userID": "50-8481977"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000013"
+      },
+      "name": "Team-oriented",
+      "description": "Synergized client-server middleware",
+      "link": "http://networkadvertising.org/in/quam/fringilla/rhoncus/mauris.jsp?ac=nulla&nibh=ultrices&fusce=aliquet&lacus=maecenas&purus=leo&aliquet=odio&at=condimentum&feugiat=id&non=luctus&pretium=nec&quis=molestie",
+      "Rating": 1,
+      "tags": ["podcasts", "papers"],
+      "userID": "33-1957077"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000014"
+      },
+      "name": "global",
+      "description": "Cross-platform web-enabled productivity",
+      "link": "http://dyndns.org/eleifend/pede/libero/quis/orci.aspx?blandit=ut&ultrices=tellus&enim=nulla&lorem=ut&ipsum=erat&dolor=id&sit=mauris&amet=vulputate&consectetuer=elementum&adipiscing=nullam&elit=varius&proin=nulla&interdum=facilisi&mauris=cras&non=non&ligula=velit&pellentesque=nec&ultrices=nisi&phasellus=vulputate&id=nonummy&sapien=maecenas&in=tincidunt&sapien=lacus&iaculis=at&congue=velit&vivamus=vivamus&metus=vel&arcu=nulla&adipiscing=eget&molestie=eros&hendrerit=elementum&at=pellentesque&vulputate=quisque&vitae=porta&nisl=volutpat&aenean=erat&lectus=quisque&pellentesque=erat&eget=eros&nunc=viverra&donec=eget&quis=congue&orci=eget&eget=semper&orci=rutrum&vehicula=nulla&condimentum=nunc&curabitur=purus&in=phasellus&libero=in&ut=felis&massa=donec&volutpat=semper&convallis=sapien&morbi=a&odio=libero&odio=nam&elementum=dui&eu=proin&interdum=leo",
+      "Rating": 4,
+      "tags": ["tutorials", "blogs"],
+      "userID": "68-5430972"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000015"
+      },
+      "name": "grid-enabled",
+      "description": "Re-contextualized high-level software",
+      "link": "http://chronoengine.com/mauris/enim/leo/rhoncus/sed.png?eu=aliquam&massa=augue&donec=quam&dapibus=sollicitudin&duis=vitae&at=consectetuer&velit=eget&eu=rutrum&est=at&congue=lorem&elementum=integer&in=tincidunt&hac=ante&habitasse=vel&platea=ipsum&dictumst=praesent&morbi=blandit&vestibulum=lacinia&velit=erat&id=vestibulum&pretium=sed&iaculis=magna&diam=at&erat=nunc&fermentum=commodo&justo=placerat&nec=praesent&condimentum=blandit&neque=nam&sapien=nulla&placerat=integer&ante=pede&nulla=justo&justo=lacinia&aliquam=eget&quis=tincidunt&turpis=eget&eget=tempus&elit=vel&sodales=pede&scelerisque=morbi&mauris=porttitor&sit=lorem&amet=id&eros=ligula&suspendisse=suspendisse&accumsan=ornare&tortor=consequat&quis=lectus&turpis=in&sed=est&ante=risus&vivamus=auctor&tortor=sed&duis=tristique",
+      "Rating": 3,
+      "tags": ["meetups", "tutorials"],
+      "userID": "25-9604148"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000016"
+      },
+      "name": "Automated",
+      "description": "Universal multi-state challenge",
+      "link": "https://rambler.ru/faucibus/orci/luctus.js?a=donec&odio=odio&in=justo&hac=sollicitudin&habitasse=ut&platea=suscipit&dictumst=a&maecenas=feugiat&ut=et&massa=eros&quis=vestibulum&augue=ac&luctus=est&tincidunt=lacinia&nulla=nisi&mollis=venenatis&molestie=tristique&lorem=fusce&quisque=congue&ut=diam&erat=id&curabitur=ornare&gravida=imperdiet&nisi=sapien&at=urna&nibh=pretium&in=nisl&hac=ut&habitasse=volutpat&platea=sapien&dictumst=arcu&aliquam=sed&augue=augue&quam=aliquam&sollicitudin=erat&vitae=volutpat&consectetuer=in&eget=congue&rutrum=etiam&at=justo",
+      "Rating": 2,
+      "tags": ["moocs", "news"],
+      "userID": "77-8653075"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000017"
+      },
+      "name": "transitional",
+      "description": "Adaptive modular productivity",
+      "link": "http://businessweek.com/ut/at/dolor.json?tempus=in&semper=tempus&est=sit&quam=amet&pharetra=sem&magna=fusce&ac=consequat&consequat=nulla&metus=nisl&sapien=nunc&ut=nisl&nunc=duis&vestibulum=bibendum&ante=felis&ipsum=sed&primis=interdum&in=venenatis&faucibus=turpis&orci=enim&luctus=blandit&et=mi&ultrices=in&posuere=porttitor&cubilia=pede&curae=justo&mauris=eu&viverra=massa&diam=donec&vitae=dapibus&quam=duis&suspendisse=at&potenti=velit&nullam=eu&porttitor=est&lacus=congue&at=elementum&turpis=in&donec=hac&posuere=habitasse&metus=platea",
+      "Rating": 0,
+      "tags": ["news", "meetups"],
+      "userID": "65-9124628"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000018"
+      },
+      "name": "background",
+      "description": "Reverse-engineered didactic parallelism",
+      "link": "https://ibm.com/tellus/semper/interdum.html?morbi=fermentum&sem=donec&mauris=ut&laoreet=mauris&ut=eget&rhoncus=massa&aliquet=tempor&pulvinar=convallis&sed=nulla&nisl=neque&nunc=libero&rhoncus=convallis&dui=eget&vel=eleifend&sem=luctus&sed=ultricies&sagittis=eu&nam=nibh&congue=quisque&risus=id&semper=justo&porta=sit&volutpat=amet&quam=sapien&pede=dignissim&lobortis=vestibulum&ligula=vestibulum&sit=ante&amet=ipsum&eleifend=primis&pede=in&libero=faucibus&quis=orci&orci=luctus&nullam=et&molestie=ultrices&nibh=posuere&in=cubilia&lectus=curae&pellentesque=nulla&at=dapibus&nulla=dolor",
+      "Rating": 5,
+      "tags": ["tutorials", "blogs"],
+      "userID": "21-9650375"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb4000019"
+      },
+      "name": "Ergonomic",
+      "description": "Front-line empowering methodology",
+      "link": "http://bloglines.com/cras/in/purus/eu/magna/vulputate/luctus.json?quisque=pede&ut=venenatis&erat=non&curabitur=sodales&gravida=sed&nisi=tincidunt&at=eu&nibh=felis&in=fusce&hac=posuere&habitasse=felis&platea=sed&dictumst=lacus&aliquam=morbi&augue=sem&quam=mauris&sollicitudin=laoreet&vitae=ut&consectetuer=rhoncus&eget=aliquet&rutrum=pulvinar&at=sed&lorem=nisl&integer=nunc&tincidunt=rhoncus&ante=dui&vel=vel&ipsum=sem&praesent=sed&blandit=sagittis&lacinia=nam&erat=congue&vestibulum=risus&sed=semper&magna=porta&at=volutpat&nunc=quam&commodo=pede&placerat=lobortis&praesent=ligula&blandit=sit&nam=amet&nulla=eleifend&integer=pede&pede=libero&justo=quis&lacinia=orci&eget=nullam&tincidunt=molestie&eget=nibh&tempus=in&vel=lectus&pede=pellentesque&morbi=at&porttitor=nulla&lorem=suspendisse&id=potenti&ligula=cras&suspendisse=in&ornare=purus&consequat=eu&lectus=magna&in=vulputate&est=luctus&risus=cum",
+      "Rating": 1,
+      "tags": ["podcasts", "news"],
+      "userID": "89-9801312"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400001a"
+      },
+      "name": "capability",
+      "description": "Multi-layered bandwidth-monitored hub",
+      "link": "http://ft.com/proin/leo/odio/porttitor/id/consequat/in.json?nibh=suscipit&quisque=ligula&id=in&justo=lacus&sit=curabitur&amet=at&sapien=ipsum",
+      "Rating": 5,
+      "tags": ["tutorials", "news"],
+      "userID": "19-7947701"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400001b"
+      },
+      "name": "Multi-lateral",
+      "description": "Team-oriented well-modulated help-desk",
+      "link": "http://networksolutions.com/neque/vestibulum.jpg?nulla=vestibulum&suspendisse=proin&potenti=eu&cras=mi&in=nulla&purus=ac&eu=enim&magna=in&vulputate=tempor&luctus=turpis&cum=nec&sociis=euismod&natoque=scelerisque&penatibus=quam&et=turpis&magnis=adipiscing&dis=lorem&parturient=vitae&montes=mattis&nascetur=nibh&ridiculus=ligula&mus=nec&vivamus=sem&vestibulum=duis&sagittis=aliquam&sapien=convallis&cum=nunc&sociis=proin&natoque=at&penatibus=turpis&et=a&magnis=pede&dis=posuere&parturient=nonummy&montes=integer&nascetur=non&ridiculus=velit&mus=donec&etiam=diam&vel=neque&augue=vestibulum&vestibulum=eget&rutrum=vulputate&rutrum=ut&neque=ultrices&aenean=vel&auctor=augue&gravida=vestibulum&sem=ante&praesent=ipsum&id=primis&massa=in&id=faucibus&nisl=orci&venenatis=luctus&lacinia=et&aenean=ultrices&sit=posuere&amet=cubilia&justo=curae&morbi=donec&ut=pharetra&odio=magna&cras=vestibulum",
+      "Rating": 3,
+      "tags": ["tutorials", "blogs"],
+      "userID": "42-9160670"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400001c"
+      },
+      "name": "projection",
+      "description": "Object-based asymmetric superstructure",
+      "link": "http://cdbaby.com/bibendum/felis/sed/interdum/venenatis/turpis.js?sapien=nam&in=ultrices&sapien=libero&iaculis=non&congue=mattis&vivamus=pulvinar&metus=nulla&arcu=pede&adipiscing=ullamcorper&molestie=augue",
+      "Rating": 3,
+      "tags": ["meetups", "podcasts"],
+      "userID": "69-9852555"
+    },
+    {
+      "id": {
+        "$oid": "611fcf02fc13ae3eb400001d"
+      },
+      "name": "Progressive",
+      "description": "Streamlined systematic extranet",
+      "link": "http://dion.ne.jp/venenatis/turpis.aspx?a=sapien&libero=cursus&nam=vestibulum&dui=proin&proin=eu&leo=mi&odio=nulla&porttitor=ac&id=enim&consequat=in&in=tempor&consequat=turpis&ut=nec&nulla=euismod&sed=scelerisque&accumsan=quam&felis=turpis&ut=adipiscing&at=lorem&dolor=vitae&quis=mattis&odio=nibh&consequat=ligula&varius=nec&integer=sem&ac=duis&leo=aliquam&pellentesque=convallis&ultrices=nunc&mattis=proin&odio=at&donec=turpis&vitae=a&nisi=pede&nam=posuere&ultrices=nonummy&libero=integer&non=non&mattis=velit&pulvinar=donec&nulla=diam&pede=neque&ullamcorper=vestibulum&augue=eget&a=vulputate&suscipit=ut&nulla=ultrices&elit=vel&ac=augue",
+      "Rating": 1,
+      "tags": ["podcasts", "news"],
+      "userID": "03-9330323"
+    }
+  ]
+}
