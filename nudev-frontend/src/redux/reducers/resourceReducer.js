@@ -14,7 +14,6 @@ const reducer = (state = [], action) => {
       return state.map((resource) =>
         resource.id !== id ? resource : changedResource
       );
-
     default:
       return state;
   }
