@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ProfilePicture from "../components/resources/ProfilePicture";
 import ResourceNav from "../components/resources/ResourceNav";
 import Profile from "../components/resources/Profile";
@@ -9,7 +8,6 @@ import { useHistory } from "react-router-dom";
 import { ResourcesStyle } from "../pages/ResourcesStyle";
 
 const Resources = () => {
-  const [resourcesView, SetResourcesView] = useState("Resources");
   const { currentUser, logout } = useAuth();
   const history = useHistory();
 

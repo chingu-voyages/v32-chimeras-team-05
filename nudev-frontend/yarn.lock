@@ -11064,6 +11064,7 @@ fsevents@^1.2.7:
     react: ^17.0.2
     react-bootstrap: ^1.6.1
     react-dom: ^17.0.2
+    react-hook-form: ^7.13.0
     react-icons: ^4.2.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
@@ -13058,6 +13059,15 @@ fsevents@^1.2.7:
   version: 6.0.9
   resolution: "react-error-overlay@npm:6.0.9"
   checksum: 695853bc885e798008a00c10d8d94e5ac91626e8130802fea37345f9c037f41b80104345db2ee87f225feb4a4ef71b0df572b17c378a6d397b6815f6d4a84293
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.13.0":
+  version: 7.13.0
+  resolution: "react-hook-form@npm:7.13.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17
+  checksum: 763aefa3ceb26846dbd6f8fefe85d176a033c73aa5e2cffa460afb972bf6032b80a174b13a46543d4412741617d9ff4ef5b161956fcc64200cd7b7b9299174ad
   languageName: node
   linkType: hard
 
