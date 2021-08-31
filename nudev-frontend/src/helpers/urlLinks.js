@@ -1,7 +1,7 @@
 import Login from "../components/auth/Login";
-import Profile from "../components/resources/Profile";
 import About from "../pages/About";
 import Landing from "../pages/Landing";
+import ProfilePage from "../pages/ProfilePage";
 import Resources from "../pages/Resources";
 import Team from "../pages/Team";
 
@@ -45,7 +45,7 @@ export const routesList = {
     id: 5,
     title: "Profile",
     path: "/profile",
-    componentName: Profile,
+    componentName: ProfilePage,
     mainNav: false,
   },
 };
