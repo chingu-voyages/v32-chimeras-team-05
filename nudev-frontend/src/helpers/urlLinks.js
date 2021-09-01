@@ -39,13 +39,13 @@ export const routesList = {
     title: "Login",
     path: "/login",
     componentName: Login,
-    mainNav: true,
+    mainNav: false,
   },
   profile: {
     id: 5,
     title: "Profile",
     path: "/profile",
     componentName: ProfilePage,
-    mainNav: false,
+    mainNav: true,
   },
 };

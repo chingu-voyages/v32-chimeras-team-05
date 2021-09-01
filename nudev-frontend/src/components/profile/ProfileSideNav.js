@@ -1,24 +1,40 @@
-import { Nav } from "react-bootstrap";
 import styled from "styled-components";
 
 const ProfileSideNav = ({ profileContent }) => {
   return (
-    <>
-      <Nav variant="pills" className="flex-column h-100">
-        <PSNProfilePic>hello</PSNProfilePic>
+    <PSNav>
+      <PSNProfilePic />
+      <PSNavList>
         {profileContent.map(({ id, title }) => (
-          <Nav.Item key={id}>
-            <Nav.Link eventKey={id}>{title}</Nav.Link>
-          </Nav.Item>
+          <PSNavItem key={`psnavitem-${id}`} href="#title">
+            {title}
+          </PSNavItem>
         ))}
-      </Nav>
-    </>
+      </PSNavList>
+    </PSNav>
   );
 };
 
 const PSNProfilePic = styled.div`
   padding: 3em 0;
   min-height: 30vh;
+`;
+
+const PSNav = styled.nav`
+  display: grid;
+  grid-gap: 1em;
+  grid-area: sidenav;
+  padding: 4em 2em;
+`;
+
+const PSNavList = styled.div`
+  display: grid;
+  align-content: space-evenly;
+`;
+const PSNavItem = styled.button`
+  padding: 0.5em;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
 `;
 
 export default ProfileSideNav;
