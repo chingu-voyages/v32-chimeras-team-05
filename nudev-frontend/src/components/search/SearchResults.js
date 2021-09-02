@@ -1,18 +1,25 @@
 import React from "react";
+import styled from "styled-components";
 import { BiCommentEdit } from "react-icons/bi";
-import { Container } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import { colors } from "../../styles/SharedStyles";
 
 const SearchResults = ({ post }) => {
-  // console.log("post", post);
   return (
-    <div className="searchResults">
-      <p className="searchResults__name">{post.name}</p>
-      <p className="searchResults__rating">{post.rating}</p>
-      <BiCommentEdit className="searchResults__comment" />
-    </div>
+    <SearchResultsContainer>
+      <span>{post.name}</span>
+      <span>{post.rating}</span>
+      <BiCommentEdit />
+    </SearchResultsContainer>
   );
 };
+
+const SearchResultsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 70% 1fr 1fr;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 1em;
+  border: 1px solid ${colors.lightGrey};
+`;
 
 export default SearchResults;

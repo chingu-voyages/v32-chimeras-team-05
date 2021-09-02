@@ -7,13 +7,14 @@ const ProfileSideNav = ({ profileContent }) => {
   const { currentUser, logout } = useAuth();
   const history = useHistory();
 
-  const handleClick = (e) => {
+  const handleLogout = (e) => {
     const value = e.target.innerHTML;
     if (value === "LOGOUT") {
       logout();
       history.push("/login");
     }
   };
+
   return (
     <PSNav>
       <PSNProfilePic>
@@ -21,7 +22,11 @@ const ProfileSideNav = ({ profileContent }) => {
       </PSNProfilePic>
       <PSNavList>
         {profileContent.map(({ id, title }) => (
-          <PSNavItem key={`psnavitem-${id}`} href="#title">
+          <PSNavItem
+            key={`psnavitem-${id}`}
+            href="#title"
+            onClick={title.lowerCase === "logout" ?? (() => handleLogout())}
+          >
             {title}
           </PSNavItem>
         ))}
