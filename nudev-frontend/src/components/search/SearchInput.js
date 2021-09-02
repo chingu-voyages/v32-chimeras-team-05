@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import { SearchInputStyled } from "./SearchInputStyle";
 
 const SearchInput = ({
   placeholderText,
@@ -10,23 +11,17 @@ const SearchInput = ({
   handleSearchBtn,
 }) => {
   return (
-    <div>
-      <InputGroup className="mb-3">
+    <SearchInputStyled>
+      <InputGroup className=" mb-3">
         <FormControl
+          className="search-input"
           onChange={(e) => handleSearchText(e)}
           placeholder={placeholderText}
           aria-label={placeholderText}
           aria-describedby="basic-addon2"
         />
-        <Button
-          onClick={handleSearchBtn}
-          variant="outline-secondary"
-          id="button-addon2"
-        >
-          {buttonText}
-        </Button>
       </InputGroup>
-    </div>
+    </SearchInputStyled>
   );
 };
 
