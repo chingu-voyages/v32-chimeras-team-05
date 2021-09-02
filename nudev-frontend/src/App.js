@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "./components/layout/Navigation";
 import About from "./pages/About";
 import Landing from "./pages/Landing";
@@ -9,7 +9,15 @@ import AuthPage from "./pages/AuthPage";
 import Footer from "./components/layout/Footer";
 import { AuthProvider } from "./contexts/AuthContext";
 
+import { initializeResources } from "./redux/reducers/resourceReducer";
+import { useDispatch } from "react-redux";
+
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(initializeResources());
+  }, [dispatch]);
+
   return (
     <Router>
       <AuthProvider>
