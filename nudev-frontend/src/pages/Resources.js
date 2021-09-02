@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ProfilePicture from "../components/resources/ProfilePicture";
+// import ProfilePicture from "../components/resources/ProfilePicture";
 import ResourceNav from "../components/resources/ResourceNav";
 import Profile from "../components/resources/Profile";
 import { useAuth } from "../contexts/AuthContext";
@@ -24,7 +24,7 @@ const Resources = () => {
       <Container fluid>
         <Row>
           <Col className="sideSection" sm={3}>
-            <ProfilePicture currentUser={currentUser} />
+            {/* <ProfilePicture currentUser={currentUser} /> */}
             <ResourceNav handleClick={handleClick} />
           </Col>
           <Col sm={9}>

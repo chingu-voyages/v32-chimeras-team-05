@@ -1,9 +1,24 @@
 import styled from "styled-components";
+import ProfilePicture from "./ProfilePicture";
+import { useAuth } from "../../contexts/AuthContext";
+import { useHistory } from "react-router-dom";
 
 const ProfileSideNav = ({ profileContent }) => {
+  const { currentUser, logout } = useAuth();
+  const history = useHistory();
+
+  const handleClick = (e) => {
+    const value = e.target.innerHTML;
+    if (value === "LOGOUT") {
+      logout();
+      history.push("/login");
+    }
+  };
   return (
     <PSNav>
-      <PSNProfilePic />
+      <PSNProfilePic>
+        <ProfilePicture currentUser={currentUser} />
+      </PSNProfilePic>
       <PSNavList>
         {profileContent.map(({ id, title }) => (
           <PSNavItem key={`psnavitem-${id}`} href="#title">
@@ -16,7 +31,9 @@ const ProfileSideNav = ({ profileContent }) => {
 };
 
 const PSNProfilePic = styled.div`
-  padding: 3em 0;
+  display: grid;
+  justify-content: center;
+  padding-top: 3em;
   min-height: 30vh;
 `;
 

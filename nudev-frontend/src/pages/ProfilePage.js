@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ProfileHeader from "../components/profile/ProfileHeader";
-import ProfileResources from "../components/profile/ProfileResources";
+import ProfileResources from "../components/profile/profile-resources/ProfileResources";
 import ProfileSideNav from "../components/profile/ProfileSideNav";
 import { PageMain } from "../styles/SharedStyles";
 
