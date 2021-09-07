@@ -1,17 +1,20 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cors from "cors";
-import mongoose from "mongoose";
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express()
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors())
 
-const DATABASE_URL = "mongodb+srv://aditya:aditya1234@cluster0.mh3oa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+//Body parser middleware
+app.use(express.json());
+app.use(express.urlencoded({extended : false}));
 
-const PORT = 5000;
+const {resolve} = require("path");
+const {config} = require("dotenv");
+config({ path: resolve(__dirname + "/.env") });
 
-mongoose.connect(DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true })
+const url = process.env.DATABASE_STRING;
+const PORT = 8000 || process.env.PORT;
+
+mongoose.connect(url, { useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => { app.listen(PORT, () => { console.log(`Server running on port: ${PORT}`) }) })
     .catch((error) => { console.log(error.message) })
