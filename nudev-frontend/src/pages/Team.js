@@ -23,8 +23,8 @@ const Team = () => {
           </div>
           <div className="team-card">
             <h2>Edwin Agbenyega</h2>
-            <a href="/">GitHub: </a>
-            <p>Email: @gmail.com </p>
+            <a href="https://github.com/eddybanks">GitHub: github.com/eddybanks</a>
+            <p>Email: eddy.devv@gmail.com </p>
           </div>
           <div className="team-card">
             <h2>Amit Karnam</h2>
