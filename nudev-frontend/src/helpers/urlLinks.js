@@ -1,5 +1,5 @@
-import Login from "../components/auth/Login";
 import About from "../pages/About";
+import AuthPage from "../pages/AuthPage";
 import Landing from "../pages/Landing";
 import ProfilePage from "../pages/ProfilePage";
 import Resources from "../pages/Resources";
@@ -37,8 +37,8 @@ export const routesList = {
   login: {
     id: 4,
     title: "Login",
-    path: "/login",
-    componentName: Login,
+    path: "/auth",
+    componentName: AuthPage,
     mainNav: false,
   },
   profile: {

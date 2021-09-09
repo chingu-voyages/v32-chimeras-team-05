@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 import { useAuth } from "../../contexts/AuthContext";
 import firebase from "firebase";
-import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { SignUpStyle } from "./SignUpStyle";
@@ -28,7 +27,7 @@ const Login = ({ showSignUp }) => {
   return (
     <SignUpStyle>
       <Form onSubmit={handleSubmit}>
-        <Form.Text className="text-muted">LOGIN TO GET STARTED</Form.Text>
+        <h4 className="text-center mb-5">LOGIN TO GET STARTED</h4>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="form-label">Email</Form.Label>
           <Form.Control ref={emailRef} type="email" placeholder="Enter email" />

@@ -37,7 +37,6 @@ const links = [
 ];
 
 const AuthPage = () => {
-  const { signup } = useAuth();
   const [showSignUp, setShowSignUp] = useState(true);
   const { currentUser } = useAuth();
   console.log(currentUser);

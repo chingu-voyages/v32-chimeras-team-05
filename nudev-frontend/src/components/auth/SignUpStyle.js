@@ -6,25 +6,23 @@ const colors = {
 };
 
 export const SignUpStyle = styled.div`
-  /* width: 33vw; */
+  display: grid;
+  align-content: center;
+  justify-content: center;
   form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: center;
     align-items: center;
     /* border: solid black; */
     /* min-width: 40vh; */
     input {
       min-width: 500px;
     }
-    .text-muted {
-      font-size: 20px;
-      /* padding: 20px; */
-    }
     .form-label {
       font-size: 15px;
     }
     button {
-      width: 60%;
+      justify-self: stretch;
       background-color: ${colors.grey};
       border: none;
     }

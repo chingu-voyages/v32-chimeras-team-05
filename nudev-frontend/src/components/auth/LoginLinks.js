@@ -1,6 +1,5 @@
 import React from "react";
 import LoginLink from "./LoginLink";
-import { FaGoogle } from "react-icons/fa";
 import { LoginLinksStyle } from "./LoginLinkStyle";
 
 const LoginLinks = ({ showSignUp, setShowSignUp, links }) => {
