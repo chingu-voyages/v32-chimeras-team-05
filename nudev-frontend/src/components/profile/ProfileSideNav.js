@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import ProfilePicture from "./ProfilePicture";
 import { useAuth } from "../../contexts/AuthContext";
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 
 const ProfileSideNav = ({ profileContent }) => {
   const { currentUser, logout } = useAuth();
   const history = useHistory();
 
-  const handleLogout = (e) => {
-    const value = e.target.innerHTML;
-    if (value === "LOGOUT") {
-      logout();
-      history.push("/login");
-    }
+  const handleLogout = () => {
+    logout();
+    history.push("/auth");
   };
+
+  if (!currentUser) return <Redirect to="/auth" />;
 
   return (
     <PSNav>
@@ -21,13 +20,15 @@ const ProfileSideNav = ({ profileContent }) => {
         <ProfilePicture currentUser={currentUser} />
       </PSNProfilePic>
       <PSNavList>
-        {profileContent.map(({ id, title }) => (
+        {profileContent.map((content, idx) => (
           <PSNavItem
-            key={`psnavitem-${id}`}
+            key={`psnavitem-${idx}`}
             href="#title"
-            onClick={title.lowerCase === "logout" ?? (() => handleLogout())}
+            onClick={
+              content.title.lowerCase === "logout" ?? (() => handleLogout())
+            }
           >
-            {title}
+            {content.title}
           </PSNavItem>
         ))}
       </PSNavList>

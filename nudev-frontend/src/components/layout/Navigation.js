@@ -18,7 +18,7 @@ const Navigation = () => {
           {Object.values(routesList)
             .filter((route) => route.mainNav === true)
             .map((navItem, idx) => {
-              return (navItem.title === "Profile") & !currentUser ? (
+              return (navItem.path === "/profile") & !currentUser ? (
                 <Nav.Link key={`nav-item-${idx}`} as={Link} to="/auth">
                   Login
                 </Nav.Link>
