@@ -1,18 +1,12 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import { useAuth } from "../../contexts/AuthContext";
-
-const navList = [
-  { id: 1, title: "About", path: "/about" },
-  { id: 2, title: "Resources", path: "/resources" },
-  { id: 3, title: "Team", path: "/team" },
-  { id: 4, title: "Login", path: "/login" },
-];
+import { routesList } from "../../helpers/urlLinks";
+import { useAuth } from "../../contexts/AuthContext";
 
 const Navigation = () => {
   // const { logout } = useAuth();
-  // const { currentUser } = useAuth();
+  const { currentUser } = useAuth();
   return (
     <Navbar bg="light" expand="lg" className="p-3">
       <Navbar.Brand as={Link} to="/">
@@ -21,11 +15,19 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="mr-auto">
-          {navList.map((navItem, idx) => (
-            <Nav.Link key={`nav-item-${idx}`} as={Link} to={navItem.path}>
-              {navItem.title}
-            </Nav.Link>
-          ))}
+          {Object.values(routesList)
+            .filter((route) => route.mainNav === true)
+            .map((navItem, idx) => {
+              return (navItem.path === "/profile") & !currentUser ? (
+                <Nav.Link key={`nav-item-${idx}`} as={Link} to="/auth">
+                  Login
+                </Nav.Link>
+              ) : (
+                <Nav.Link key={`nav-item-${idx}`} as={Link} to={navItem.path}>
+                  {navItem.title}
+                </Nav.Link>
+              );
+            })}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

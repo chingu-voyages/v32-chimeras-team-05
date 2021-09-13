@@ -1,5 +1,16 @@
-import React from "react";
-import { ResourceNavStyled } from "./ResourceNavStyle";
+import styled from "styled-components";
+
+const ResourceNavStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 200px;
+    margin: 5px;
+    &:hover {
+      background-color: lightcoral;
+    }
+  }
+`;
 
 const ResourceNav = ({ handleClick }) => {
   return (

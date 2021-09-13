@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGoogle } from "react-icons/fa";
 import { LoginLinkStyle } from "./LoginLinkStyle";
 
 const ContinueWithBtn = ({ name, color, icon }) => {

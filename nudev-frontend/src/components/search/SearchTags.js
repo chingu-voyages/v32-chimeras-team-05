@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import SearchTag from "./SearchTag";
-import { Container } from "react-bootstrap";
+import styled from "styled-components";
 
 const SearchTags = ({ updateTagArray }) => {
   const tags = [
@@ -21,7 +20,7 @@ const SearchTags = ({ updateTagArray }) => {
   ];
 
   return (
-    <Container className="searchTags">
+    <SearchTagsContainer>
       {tags.map(
         (tag) =>
           (tag = (
@@ -32,8 +31,15 @@ const SearchTags = ({ updateTagArray }) => {
             />
           ))
       )}
-    </Container>
+    </SearchTagsContainer>
   );
 };
 
+const SearchTagsContainer = styled.div`
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-evenly;
+  padding: 1em 3em;
+`;
 export default SearchTags;
