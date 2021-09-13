@@ -5025,6 +5025,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"caniuse-lite@npm:^1.0.30001257":
+  version: 1.0.30001257
+  resolution: "caniuse-lite@npm:1.0.30001257"
+  checksum: d336d5bfaacc5be9d6ab1de3687e6cd88b124f9c3a2013ff40ab9f324cca249de5f93cc4589076c4414d65066ccaa35fc9894346735c3088ce5452c42baaf7db
+  languageName: node
+  linkType: hard
+
 "capture-exit@npm:^2.0.0":
   version: 2.0.0
   resolution: "capture-exit@npm:2.0.0"
@@ -11566,6 +11573,7 @@ fsevents@^1.2.7:
     "@testing-library/user-event": ^12.1.10
     axios: ^0.21.1
     bootstrap: ^5.0.2
+    caniuse-lite: ^1.0.30001257
     deep-freeze: ^0.0.1
     firebase: ^8.9.0
     json-server: ^0.16.3
