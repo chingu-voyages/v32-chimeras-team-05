@@ -1,0 +1,16 @@
+export const tags = [
+  "blogs",
+  "tutorials",
+  "podcasts",
+  "moocs",
+  "papers",
+  "news",
+  "jobs",
+  "meetups",
+  "Communities",
+  "books",
+  "newsletters",
+  "tools",
+  "projects",
+  "showcases",
+];

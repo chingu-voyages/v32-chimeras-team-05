@@ -14,10 +14,15 @@ const createNew = async (content) => {
   return response.data;
 };
 
-const deleteResource = async (id) => {
-  const response = await axios.delete(baseUrl + "/" + id);
-  console.log("this is response", response.data.json);
-  return response.data.json;
+const editResource = async (id, content) => {
+  const response = await axios.put(`${baseUrl}/${id}`, content);
+  return response.data;
 };
 
-export default { getAll, createNew, deleteResource };
+const deleteResource = async (id) => {
+  const response = await axios.delete(baseUrl + "/" + id);
+
+  return response.data;
+};
+
+export default { getAll, createNew, deleteResource, editResource };

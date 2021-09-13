@@ -24,32 +24,19 @@ const ProfileResources = () => {
   console.log("current user is @@@", currentUser.uid);
   const [showResourceModal, setShowResourceModal] = useState(false);
   const resourceList = useSelector((state) => state.resource);
-  // const [currentUserResources, setCurrentUserResources] = useState([]);
 
   console.log(resourceList);
-
-  // const [resourceList, setResourceList] = useState([
-  //   { id: 1, title: "How to create a new react app" },
-  //   { id: 2, title: "Getting started with hooks" },
-  // ]);
 
   const dispatch = useDispatch();
 
   const addResource = (resource) => {
     const newResource = { ...resource, ...userUID };
     dispatch(createResource(newResource));
-    // const newResourceList = [
-    //   ...resourceList,
-    //   {
-    //     id: resourceList.length + 1,
-    //     ...resource,
-    //   },
-    // ];
-    // setResourceList(newResourceList);
   };
 
   const editResource = (resource) => {
     let newResourceList = [...resourceList];
+    console.log("new resourcelist", newResourceList);
     let resourceItem = newResourceList.find((item) => item.id === resource.id);
     resourceItem = { id: resource.id, ...resource };
     // setResourceList(newResourceList);
@@ -74,15 +61,18 @@ const ProfileResources = () => {
       <PRList>
         {resourceList
           .filter((resource) => resource.userId === currentUser.uid)
-          .map(({ id, title }) => (
-            <PRListItem id={id} key={id}>
-              {title}
-              <PRListIcons id={id}>
-                <FaEdit onClick={handleShow} actionType={editResource} />
+          // .map(({ id, title }) => (
+          .map((resource) => (
+            <PRListItem key={resource.id}>
+              {resource.title}
+              <PRListIcons>
+                <FaEdit
+                  resource={resource}
+                  onClick={handleShow}
+                  actionType={editResource}
+                />
                 <FaTrashAlt
-                  id={id}
-                  // actionType={(e) => handleDelete(e)}
-
+                  id={resource.id}
                   onClick={(e) => {
                     handleDelete(e);
                   }}
