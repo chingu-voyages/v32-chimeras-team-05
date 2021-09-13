@@ -5,6 +5,7 @@ import { useHistory, Redirect } from "react-router-dom";
 
 const ProfileSideNav = ({ profileContent }) => {
   const { currentUser, logout } = useAuth();
+  console.log("current use pror", currentUser);
   const history = useHistory();
 
   const handleLogout = () => {

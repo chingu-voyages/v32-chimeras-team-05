@@ -4,16 +4,19 @@ const reducer = (state = [], action) => {
   console.log("ACTION:", action);
   switch (action.type) {
     case "NEW_RESOURCE":
+      const id = action.data.id;
       return [...state, action.data];
     case "INIT_RESOURCES":
       return action.data;
     case "EDIT_RESOURCE":
-      const id = action.data.id;
       const resourceToChange = state.find((n) => n.id === id);
       const changedResource = action.data;
       return state.map((resource) =>
         resource.id !== id ? resource : changedResource
       );
+    case "DELETE_RESOURCE":
+      return state.filter((resource) => resource.id !== action.data.id);
+
     default:
       return state;
   }
@@ -25,6 +28,27 @@ export const initializeResources = () => {
     dispatch({
       type: "INIT_RESOURCES",
       data: resources,
+    });
+  };
+};
+
+export const createResource = (content, uid) => {
+  return async (dispatch) => {
+    const newResource = await resourceService.createNew(content);
+    dispatch({
+      type: "NEW_RESOURCE",
+      data: newResource,
+    });
+  };
+};
+
+export const deleteResource = (id) => {
+  return async (dispatch) => {
+    const deletedResource = await resourceService.deleteResource(id);
+    console.log("this is deleted resource", deletedResource);
+    dispatch({
+      type: "DELETE_RESOURCE",
+      data: id,
     });
   };
 };

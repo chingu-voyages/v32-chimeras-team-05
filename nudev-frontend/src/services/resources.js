@@ -8,9 +8,16 @@ const getAll = async () => {
 };
 
 const createNew = async (content) => {
-  const resource = { content };
+  const resource = { ...content };
+
   const response = await axios.post(baseUrl, resource);
   return response.data;
 };
 
-export default { getAll, createNew };
+const deleteResource = async (id) => {
+  const response = await axios.delete(baseUrl + "/" + id);
+  console.log("this is response", response.data.json);
+  return response.data.json;
+};
+
+export default { getAll, createNew, deleteResource };
