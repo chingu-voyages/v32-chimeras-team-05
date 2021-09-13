@@ -15,7 +15,11 @@ const reducer = (state = [], action) => {
         resource.id !== id ? resource : changedResource
       );
     case "DELETE_RESOURCE":
-      return state.filter((resource) => resource.id !== action.data.id);
+      const updatedResource = state.filter(
+        (resource) => resource.id !== action.data
+      );
+
+      return [...updatedResource];
 
     default:
       return state;
@@ -45,7 +49,7 @@ export const createResource = (content, uid) => {
 export const deleteResource = (id) => {
   return async (dispatch) => {
     const deletedResource = await resourceService.deleteResource(id);
-    console.log("this is deleted resource", deletedResource);
+
     dispatch({
       type: "DELETE_RESOURCE",
       data: id,
