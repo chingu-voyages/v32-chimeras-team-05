@@ -24,7 +24,7 @@ const Login = ({ showSignUp }) => {
       console.log(currentUser);
       history.push("/profile");
     } catch (err) {
-      setMessage("Failed to login, please try again.");
+      setMessage("Failed to login, please try again. ");
     }
   };
 
