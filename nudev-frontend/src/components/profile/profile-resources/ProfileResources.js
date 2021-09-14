@@ -7,6 +7,7 @@ import { useAuth } from "../../../contexts/AuthContext";
 import {
   createResource,
   deleteResource,
+  editResource,
 } from "../../../redux/reducers/resourceReducer";
 
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
@@ -44,12 +45,8 @@ const ProfileResources = () => {
 
   const handleDelete = (e) => {
     const id = e.currentTarget.parentNode.id;
-    console.log("this is the id", id);
 
     dispatch(deleteResource(id));
-
-    // const newResourceList = [...resourceList];
-    // newResourceList.splice(resource);
   };
 
   const handleClose = () => setShowResourceModal(false);
@@ -61,7 +58,6 @@ const ProfileResources = () => {
       <PRList>
         {resourceList
           .filter((resource) => resource.userId === currentUser.uid)
-          // .map(({ id, title }) => (
           .map((resource) => (
             <PRListItem key={resource.id}>
               {resource.name}
