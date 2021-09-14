@@ -361,27 +361,27 @@
       "userId": "5e37402b-8c46-4b2d-b761-7a81d283ca40"
     },
     {
-      "title": "dfdf",
-      "description": "fdsfdsfsfsf",
+      "name": "test",
+      "description": "hello",
       "type": [
-        "tutorials"
+        "tutorials",
+        "podcasts"
       ],
       "level": "beginner",
       "technologies": "react",
       "userId": "FYbb4BCoXaWJ2uUDHSXQM0FY50D2",
-      "id": "FPhxWS4"
+      "id": "-Y84IE1"
     },
     {
-      "title": "",
-      "description": "",
+      "name": "Testtst",
+      "description": "dsdsd dsds sds ds",
       "type": [
-        "blogs"
+        "projects"
       ],
       "level": "beginner",
       "technologies": "react",
-      "name": "dfdf",
       "userId": "FYbb4BCoXaWJ2uUDHSXQM0FY50D2",
-      "id": "ukA5aCw"
+      "id": "u84JxoI"
     }
   ]
 }

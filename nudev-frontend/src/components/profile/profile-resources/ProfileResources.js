@@ -64,9 +64,10 @@ const ProfileResources = () => {
           // .map(({ id, title }) => (
           .map((resource) => (
             <PRListItem key={resource.id}>
-              {resource.title}
-              <PRListIcons>
+              {resource.name}
+              <PRListIcons id={resource.id}>
                 <FaEdit
+                  id={resource.id}
                   resource={resource}
                   onClick={handleShow}
                   actionType={editResource}
