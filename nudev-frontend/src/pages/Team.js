@@ -18,18 +18,22 @@ const Team = () => {
         <div className="grid-container">
           <div className="team-card">
             <h2>Joe Baker</h2>
-            <a href="/">GitHub: </a>
+            <a href="https://github.com/JBR90">GitHub: github.com/JBR90 </a>
             <p>Email: JBR90@gmail.com </p>
           </div>
           <div className="team-card">
             <h2>Edwin Agbenyega</h2>
-            <a href="https://github.com/eddybanks">GitHub: github.com/eddybanks</a>
+            <a href="https://github.com/eddybanks">
+              GitHub: github.com/eddybanks
+            </a>
             <p>Email: eddy.devv@gmail.com </p>
           </div>
           <div className="team-card">
             <h2>Amit Karnam</h2>
-            <a href="/">GitHub: </a>
-            <p>Email: @gmail.com </p>
+            <a href="https://github.com/AmitKarnam">
+              GitHub: github.com/AmitKarnam{" "}
+            </a>
+            <p>amitkarnam6@gmail.com </p>
           </div>
         </div>
       </div>
