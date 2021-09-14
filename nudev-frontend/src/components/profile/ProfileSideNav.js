@@ -9,6 +9,7 @@ const ProfileSideNav = ({ profileContent }) => {
   const history = useHistory();
 
   const handleLogout = () => {
+    console.log("GH");
     logout();
     history.push("/auth");
   };
@@ -26,8 +27,13 @@ const ProfileSideNav = ({ profileContent }) => {
             key={`psnavitem-${idx}`}
             href="#title"
             onClick={
-              content.title.lowerCase === "logout" ?? (() => handleLogout())
+              content.title.toLowerCase() === "logout"
+                ? () => handleLogout()
+                : null
             }
+            // onClick={
+            //   content.title.lowerCase === "logout" ?? (() => handleLogout())
+            // }
           >
             {content.title}
           </PSNavItem>
