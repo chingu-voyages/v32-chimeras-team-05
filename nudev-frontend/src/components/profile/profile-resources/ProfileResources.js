@@ -1,5 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useAuth } from "../../../contexts/AuthContext";
+
+import {
+  createResource,
+  deleteResource,
+  editResource,
+} from "../../../redux/reducers/resourceReducer";
+
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import {
   colors,
@@ -10,33 +20,33 @@ import {
 import ResourceModal from "./ResourceModal";
 
 const ProfileResources = () => {
+  const { currentUser } = useAuth();
+  const userUID = { userId: currentUser.uid };
+  console.log("current user is @@@", currentUser.uid);
   const [showResourceModal, setShowResourceModal] = useState(false);
-  const [resourceList, setResourceList] = useState([
-    { id: 1, title: "How to create a new react app" },
-    { id: 2, title: "Getting started with hooks" },
-  ]);
+  const resourceList = useSelector((state) => state.resource);
+
+  console.log(resourceList);
+
+  const dispatch = useDispatch();
 
   const addResource = (resource) => {
-    const newResourceList = [
-      ...resourceList,
-      {
-        id: resourceList.length + 1,
-        ...resource,
-      },
-    ];
-    setResourceList(newResourceList);
+    const newResource = { ...resource, ...userUID };
+    dispatch(createResource(newResource));
   };
 
   const editResource = (resource) => {
     let newResourceList = [...resourceList];
+    console.log("new resourcelist", newResourceList);
     let resourceItem = newResourceList.find((item) => item.id === resource.id);
     resourceItem = { id: resource.id, ...resource };
-    setResourceList(newResourceList);
+    // setResourceList(newResourceList);
   };
 
-  const deleteResource = (resource) => {
-    const newResourceList = [...resourceList];
-    newResourceList.splice(resource);
+  const handleDelete = (e) => {
+    const id = e.currentTarget.parentNode.id;
+
+    dispatch(deleteResource(id));
   };
 
   const handleClose = () => setShowResourceModal(false);
@@ -46,15 +56,27 @@ const ProfileResources = () => {
     <PRContainer>
       <PRHeader>Created Resources:</PRHeader>
       <PRList>
-        {resourceList.map(({ id, title }) => (
-          <PRListItem key={id}>
-            {title}
-            <PRListIcons>
-              <FaEdit onClick={handleShow} actionType={editResource} />
-              <FaTrashAlt />
-            </PRListIcons>
-          </PRListItem>
-        ))}
+        {resourceList
+          .filter((resource) => resource.userId === currentUser.uid)
+          .map((resource) => (
+            <PRListItem key={resource.id}>
+              {resource.name}
+              <PRListIcons id={resource.id}>
+                <FaEdit
+                  id={resource.id}
+                  resource={resource}
+                  onClick={handleShow}
+                  actionType={editResource}
+                />
+                <FaTrashAlt
+                  id={resource.id}
+                  onClick={(e) => {
+                    handleDelete(e);
+                  }}
+                />
+              </PRListIcons>
+            </PRListItem>
+          ))}
       </PRList>
       <PRButton onClick={handleShow}>Add Resource</PRButton>
       <ResourceModal

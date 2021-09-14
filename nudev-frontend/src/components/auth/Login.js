@@ -1,15 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import { useAuth } from "../../contexts/AuthContext";
 import firebase from "firebase";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { SignUpStyle } from "./SignUpStyle";
+import { useHistory, Redirect } from "react-router-dom";
 
 const Login = ({ showSignUp }) => {
   const { login } = useAuth();
   const emailRef = useRef();
   const passwordRef = useRef();
+  const history = useHistory();
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,8 +22,9 @@ const Login = ({ showSignUp }) => {
       await login(emailRef.current.value, passwordRef.current.value);
       const currentUser = firebase.auth().currentUser;
       console.log(currentUser);
-    } catch {
-      console.log("Failed to make login");
+      history.push("/profile");
+    } catch (err) {
+      setMessage("Failed to login, please try again. ");
     }
   };
 
@@ -42,12 +46,10 @@ const Login = ({ showSignUp }) => {
           />
         </Form.Group>
 
-        {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group> */}
         <Button variant="primary" type="submit">
           {showSignUp ? "sign up" : "login"}
         </Button>
+        <Form.Label>{message}</Form.Label>
       </Form>
     </SignUpStyle>
   );

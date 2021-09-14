@@ -44,7 +44,6 @@ const AuthPage = () => {
   return (
     <AuthMain>
       <AuthContainer>
-        <p>{currentUser && `user logged in is: ${currentUser.email}`}</p>
         <Container>
           <Row>
             <Col>{showSignUp ? <SignUp /> : <Login />}</Col>
