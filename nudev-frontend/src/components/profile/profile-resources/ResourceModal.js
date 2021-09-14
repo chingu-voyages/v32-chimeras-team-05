@@ -29,8 +29,10 @@ const ResourceModal = ({ show, handleClose, actionType }) => {
             <input {...register("name")} />
             <label>Description: </label>
             <input {...register("description")} />
+            <label>Link: </label>
+            <input {...register("link")} />
             <label>Type: </label>
-            <select multiple {...register("type")}>
+            <select multiple {...register("tags")}>
               {tags.map((tag) => (
                 <option key={tag} value={tag}>
                   {tag}
@@ -43,7 +45,9 @@ const ResourceModal = ({ show, handleClose, actionType }) => {
               <option value="intermediate">Intermediate</option>
               <option value="advanced">Advanced</option>
             </select>
+
             <label>Technologies: </label>
+
             <select {...register("technologies")}>
               <option value="react">React</option>
               <option value="mongodb">MongoDB</option>
