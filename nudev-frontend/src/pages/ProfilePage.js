@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileResources from "../components/profile/profile-resources/ProfileResources";
 import ProfileSideNav from "../components/profile/ProfileSideNav";
+import ProfileUpdate from "../components/profile/ProfileUpdate";
 import { PageMain } from "../styles/SharedStyles";
 
 const profileContent = [
@@ -16,6 +17,7 @@ const ProfilePage = () => {
     <PPMain>
       <ProfileSideNav profileContent={profileContent} />
       <ProfileHeader title="Resources" />
+      <ProfileUpdate />
       <ProfileResources />
     </PPMain>
   );
