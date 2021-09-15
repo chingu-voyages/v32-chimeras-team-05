@@ -58,50 +58,51 @@ const Profile = () => {
 
   return (
     <PRContainer>
-      <ProfileStyled>
-        <PRHeader>Update Profile:</PRHeader>
+      <PRHeader>Update Profile:</PRHeader>
 
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formProfilePic">
-            <Form.Label>Profile Picture </Form.Label>
-            <Form.Control
-              ref={profilePicRef}
-              type="text"
-              placeholder="Enter photo URL"
-            />
-          </Form.Group>
+      <Form className="form" onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="formProfilePic">
+          <Form.Label>Profile Picture </Form.Label>
+          <Form.Control
+            ref={profilePicRef}
+            type="text"
+            placeholder="Enter photo URL"
+          />
+        </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Update Password</Form.Label>
-            <Form.Control
-              ref={passwordRef}
-              type="password"
-              placeholder="Password"
-            />
-          </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Update Password</Form.Label>
+          <Form.Control
+            ref={passwordRef}
+            type="password"
+            placeholder="Password"
+          />
+        </Form.Group>
 
-          <Form.Group
-            className="mb-3"
-            controlId="formBasicPasswordConfirmation"
-          >
-            <Form.Label>Password Confirmation</Form.Label>
-            <Form.Control
-              ref={passwordConfirmRef}
-              type="password"
-              placeholder="Password Confirmation"
-            />
-          </Form.Group>
-          <PRButton onClick={handleSubmit}>Submit</PRButton>
-        </Form>
-        <p className="error">{error}</p>
-        <p className="message">{message}</p>
-      </ProfileStyled>
+        <Form.Group className="mb-3" controlId="formBasicPasswordConfirmation">
+          <Form.Label>Password Confirmation</Form.Label>
+          <Form.Control
+            ref={passwordConfirmRef}
+            type="password"
+            placeholder="Password Confirmation"
+          />
+        </Form.Group>
+        <PRButton onClick={handleSubmit}>Submit</PRButton>
+      </Form>
+      <p className="error">{error}</p>
+      <p className="message">{message}</p>
     </PRContainer>
   );
 };
 
 export const ProfileStyled = styled.div`
-  width: 100%;
+  /* width: 100%;
+  height: 10%;
+  border: solid black; */
+  /* .form {
+    height: 30px;
+    border: solid black;
+  } */
 `;
 
 export default Profile;

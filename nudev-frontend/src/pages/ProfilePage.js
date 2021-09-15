@@ -1,24 +1,48 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileResources from "../components/profile/profile-resources/ProfileResources";
 import ProfileSideNav from "../components/profile/ProfileSideNav";
 import ProfileUpdate from "../components/profile/ProfileUpdate";
 import { PageMain } from "../styles/SharedStyles";
+import { useAuth } from "../contexts/AuthContext";
+import { useHistory, Redirect } from "react-router-dom";
 
 const profileContent = [
   { id: "123123e3e", title: "Resources" },
-  { id: "werwegwef", title: "Comments" },
+  { id: "werwegwef", title: "Update Profile" },
   { id: "gewf23e3r", title: "Bookmarks" },
   { id: "gr24t23fw", title: "Logout" },
 ];
 
 const ProfilePage = () => {
+  const { logout } = useAuth();
+  const [profileDisplay, setProfileDisplay] = useState("resources");
+  const history = useHistory();
+
+  const handleDisplayChange = (e) => {
+    const display = e.target.innerHTML.toLowerCase();
+
+    if (display === "logout") {
+      logout();
+      history.push("/auth");
+    }
+
+    console.log(e);
+    console.log(display);
+    setProfileDisplay(display);
+  };
+
   return (
     <PPMain>
-      <ProfileSideNav profileContent={profileContent} />
+      <ProfileSideNav
+        profileContent={profileContent}
+        handleDisplayChange={handleDisplayChange}
+      />
       <ProfileHeader title="Resources" />
-      <ProfileUpdate />
-      <ProfileResources />
+
+      {profileDisplay === "resources" && <ProfileResources />}
+      {profileDisplay === "update profile" && <ProfileUpdate />}
     </PPMain>
   );
 };
