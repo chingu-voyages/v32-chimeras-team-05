@@ -1,22 +1,34 @@
+import { useState } from "react";
 import styled from "styled-components";
+import { Redirect } from "react-router-dom";
 import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileResources from "../components/profile/profile-resources/ProfileResources";
 import ProfileSideNav from "../components/profile/ProfileSideNav";
+import { useAuth } from "../contexts/AuthContext";
 import { PageMain } from "../styles/SharedStyles";
+import ProfileBookmarks from "../components/profile/profile-bookmarks/ProfileBookmarks";
 
-const profileContent = [
-  { id: "123123e3e", title: "Resources" },
-  { id: "werwegwef", title: "Comments" },
-  { id: "gewf23e3r", title: "Bookmarks" },
+const profileNav = [
+  { id: "123123e3e", title: "Resources", tabComponent: ProfileResources },
+  { id: "gewf23e3r", title: "Bookmarks", tabComponent: ProfileBookmarks },
   { id: "gr24t23fw", title: "Logout" },
 ];
 
 const ProfilePage = () => {
+  const [currentTab, setCurrentTab] = useState("Resources");
+  const { currentUser, logout } = useAuth();
+
+  if (!currentUser) return <Redirect to="/auth" />;
   return (
     <PPMain>
-      <ProfileSideNav profileContent={profileContent} />
-      <ProfileHeader title="Resources" />
-      <ProfileResources />
+      <ProfileSideNav
+        profileContent={profileNav}
+        setCurrentTab={setCurrentTab}
+        currentUser={currentUser}
+        logout={logout}
+      />
+      <ProfileHeader title={currentTab} />
+      {currentTab === "Resources" ? <ProfileResources /> : <ProfileBookmarks />}
     </PPMain>
   );
 };
