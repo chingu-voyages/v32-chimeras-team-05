@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { colors } from "../../styles/SharedStyles";
+import { colors, SearchTagButton } from "../../styles/SharedStyles";
 
 const SearchTag = ({ btnText, updateTagArray }) => {
   const [toggleTag, setToggleTag] = useState(true);
@@ -22,11 +22,5 @@ const SearchTag = ({ btnText, updateTagArray }) => {
     </SearchTagButton>
   );
 };
-
-const SearchTagButton = styled.button`
-  padding: 0.3rem 1rem;
-  border: 1px solid ${colors.lightGrey};
-  border-radius: 0.2rem;
-`;
 
 export default SearchTag;

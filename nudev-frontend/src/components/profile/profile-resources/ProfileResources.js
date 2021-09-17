@@ -18,6 +18,7 @@ import {
   PRButton,
 } from "../../../styles/SharedStyles";
 import ResourceModal from "./ResourceModal";
+import { Link } from "react-router-dom";
 
 const ProfileResources = () => {
   const { currentUser } = useAuth();
@@ -61,15 +62,19 @@ const ProfileResources = () => {
           {resourceList
             .filter((resource) => resource.userId === currentUser.uid)
             .map((resource) => (
-              <PRListItem key={resource.id}>
+              <PRListItem
+                key={resource.id}
+                as={Link}
+                to={`/resource/${resource.id}`}
+              >
                 {resource.name}
                 <PRListIcons id={resource.id}>
-                  <FaEdit
+                  {/* <FaEdit
                     id={resource.id}
                     resource={resource}
                     onClick={handleShow}
                     actionType={editResource}
-                  />
+                  /> */}
                   <FaTrashAlt
                     id={resource.id}
                     onClick={(e) => {
@@ -119,6 +124,8 @@ const PRListItem = styled.li`
   grid-template-columns: auto 5em;
   padding: 1em;
   border: 1px solid ${colors.grey};
+  text-decoration: none;
+  color: ${colors.grey};
 `;
 
 const PRListIcons = styled.span`

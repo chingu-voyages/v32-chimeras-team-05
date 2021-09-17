@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { BiCommentEdit } from "react-icons/bi";
 import { colors } from "../../styles/SharedStyles";
 
 const SearchResults = ({ post }) => {
   return (
     <SearchResultsContainer>
-      <ResultTitle>{post.name}</ResultTitle>
+      <ResultTitle to={`/resource/${post.id}`}>{post.name}</ResultTitle>
       <ResultButtons>
         <span>{post.rating}</span>
         {/* <span>Hello</span> */}
@@ -25,9 +26,11 @@ const SearchResultsContainer = styled.div`
   border: 1px solid ${colors.lightGrey};
 `;
 
-const ResultTitle = styled.h5`
+const ResultTitle = styled(Link)`
   font-weight: 400;
   font-size: 1em;
+  text-decoration: none;
+  color: inherit;
 `;
 
 const ResultButtons = styled.div`

@@ -25,3 +25,10 @@ export const PRButton = styled.button`
   padding: 0 1em;
   border-radius: 0.2em;
 `;
+
+export const SearchTagButton = styled.button`
+  font-size: 0.7rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid ${colors.lightGrey};
+  border-radius: 0.2rem;
+`;
