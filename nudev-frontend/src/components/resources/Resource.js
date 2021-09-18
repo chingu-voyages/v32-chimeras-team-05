@@ -8,9 +8,12 @@ import {
   PRHeader,
   SearchTagButton,
 } from "../../styles/SharedStyles";
+import { FaBookmark, FaRegBookmark } from "react-icons/fa";
+import { useAuth } from "../../contexts/AuthContext";
 
 const Resource = () => {
   const { id } = useParams();
+  const { currentUser } = useAuth();
   let history = useHistory();
   const resources = useSelector((state) => state.resource);
   const resource = resources.find((resource) => resource.id === id);
@@ -26,6 +29,8 @@ const Resource = () => {
       <RContainer>
         <PRHeader>{resource.name}</PRHeader>
         <RDetails>
+          <FaRegBookmark />
+          <FaBookmark />
           <p>{resource.description}</p>
           {resource.tags.length > 0 && (
             <RTags>
