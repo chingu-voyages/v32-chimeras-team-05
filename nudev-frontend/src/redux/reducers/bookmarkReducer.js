@@ -1,4 +1,4 @@
-const bookmarkReducer = (state, action) => {
+const bookmarkReducer = (state = [], action) => {
   switch (action.type) {
     case "ADD_BOOKMARK":
       return [...state, action.data];
