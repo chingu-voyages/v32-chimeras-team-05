@@ -7,7 +7,6 @@ export const colors = {
 
 export const PageMain = styled.main`
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
   min-height: 85vh;
 `;
 

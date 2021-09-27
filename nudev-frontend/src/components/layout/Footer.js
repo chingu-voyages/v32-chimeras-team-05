@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const NdFooter = styled.footer`
   display: grid;
-  justify-content: end;
-  align-content: end;
-  grid-gap: 1em;
-  padding: 0 2em;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
 `;
 
 const Footer = () => {
