@@ -12,6 +12,7 @@ const profileContent = [
   { id: "123123e3e", title: "Resources" },
   { id: "werwegwef", title: "Update Profile" },
   { id: "gewf23e3r", title: "Bookmarks" },
+  { id: "r31rf31gf", title: "Logout" },
 ];
 
 const ProfilePage = () => {

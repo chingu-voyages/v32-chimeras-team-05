@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { PRContainer, PRHeader } from "../../../styles/SharedStyles";
 
 const ProfileBookmarks = () => {

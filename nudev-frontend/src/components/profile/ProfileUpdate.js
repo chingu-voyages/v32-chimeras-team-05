@@ -1,14 +1,8 @@
-import React, { useRef, useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import { useRef, useState } from "react";
+import { Form } from "react-bootstrap";
 
 import { useAuth } from "../../contexts/AuthContext";
-import styled from "styled-components";
-import {
-  colors,
-  PRContainer,
-  PRHeader,
-  PRButton,
-} from "../../styles/SharedStyles";
+import { PRContainer, PRHeader, PRButton } from "../../styles/SharedStyles";
 
 const Profile = () => {
   const [error, setError] = useState("");
@@ -89,20 +83,12 @@ const Profile = () => {
         </Form.Group>
         <PRButton onClick={handleSubmit}>Submit</PRButton>
       </Form>
-      <p className="error">{error}</p>
-      <p className="message">{message}</p>
+      <div>
+        <p className="error">{error}</p>
+        <p className="message">{message}</p>
+      </div>
     </PRContainer>
   );
 };
-
-export const ProfileStyled = styled.div`
-  /* width: 100%;
-  height: 10%;
-  border: solid black; */
-  /* .form {
-    height: 30px;
-    border: solid black;
-  } */
-`;
 
 export default Profile;
