@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileResources from "../components/profile/profile-resources/ProfileResources";
@@ -6,13 +6,12 @@ import ProfileSideNav from "../components/profile/ProfileSideNav";
 import ProfileUpdate from "../components/profile/ProfileUpdate";
 import { PageMain } from "../styles/SharedStyles";
 import { useAuth } from "../contexts/AuthContext";
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const profileContent = [
   { id: "123123e3e", title: "Resources" },
   { id: "werwegwef", title: "Update Profile" },
   { id: "gewf23e3r", title: "Bookmarks" },
-  { id: "gr24t23fw", title: "Logout" },
 ];
 
 const ProfilePage = () => {

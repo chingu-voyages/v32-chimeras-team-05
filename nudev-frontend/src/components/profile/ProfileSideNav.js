@@ -1,19 +1,9 @@
 import styled from "styled-components";
 import ProfilePicture from "./ProfilePicture";
 import { useAuth } from "../../contexts/AuthContext";
-import { useHistory, Redirect } from "react-router-dom";
 
 const ProfileSideNav = ({ profileContent, handleDisplayChange }) => {
   const { currentUser } = useAuth();
-  console.log("current use pror", currentUser);
-
-  // const handleLogout = () => {
-  //   console.log("GH");
-  //   logout();
-  //   history.push("/auth");
-  // };
-
-  if (!currentUser) return <Redirect to="/auth" />;
 
   return (
     <PSNav>
@@ -54,10 +44,11 @@ const PSNav = styled.nav`
 
 const PSNavList = styled.div`
   display: grid;
+  grid-gap: 1em;
   align-content: space-evenly;
 `;
 const PSNavItem = styled.button`
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 0.2rem;
   text-transform: uppercase;
 `;
