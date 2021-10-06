@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProfilePicture = ({ currentUser }) => {
+const ProfilePicture = ({ currentUser, handleDisplayChange }) => {
   //   let photoURL =
   //     "https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png";
   //   if (currentUser) {
@@ -14,7 +14,7 @@ const ProfilePicture = ({ currentUser }) => {
 
   return (
     <ProfilePictureStyled photoURL={photoURL}>
-      <div className="avatar">
+      <div onClick={(e) => handleDisplayChange(e)} className="avatar">
         {/* <img src={photoURL} alt=""></img> */}
         <div class="caption">
           <p>Update Profile</p>

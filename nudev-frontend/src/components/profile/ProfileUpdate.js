@@ -1,7 +1,8 @@
-import React, { useRef, useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import { ProfileStyled } from "./ProfileStyle";
+import { useRef, useState } from "react";
+import { Form } from "react-bootstrap";
+
 import { useAuth } from "../../contexts/AuthContext";
+import { PRContainer, PRHeader, PRButton } from "../../styles/SharedStyles";
 
 const Profile = () => {
   const [error, setError] = useState("");
@@ -50,11 +51,10 @@ const Profile = () => {
   };
 
   return (
-    <ProfileStyled>
-      <p className="error">{error}</p>
-      <p className="message">{message}</p>
+    <PRContainer>
+      <PRHeader>Update Profile:</PRHeader>
 
-      <Form onSubmit={handleSubmit}>
+      <Form className="form" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formProfilePic">
           <Form.Label>Profile Picture </Form.Label>
           <Form.Control
@@ -81,12 +81,13 @@ const Profile = () => {
             placeholder="Password Confirmation"
           />
         </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <PRButton onClick={handleSubmit}>Submit</PRButton>
       </Form>
-    </ProfileStyled>
+      <div>
+        <p className="error">{error}</p>
+        <p className="message">{message}</p>
+      </div>
+    </PRContainer>
   );
 };
 

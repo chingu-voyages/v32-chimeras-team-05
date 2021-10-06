@@ -1,34 +1,48 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Redirect } from "react-router-dom";
 import ProfileHeader from "../components/profile/ProfileHeader";
 import ProfileResources from "../components/profile/profile-resources/ProfileResources";
 import ProfileSideNav from "../components/profile/ProfileSideNav";
-import { useAuth } from "../contexts/AuthContext";
+import ProfileUpdate from "../components/profile/ProfileUpdate";
 import { PageMain } from "../styles/SharedStyles";
-import ProfileBookmarks from "../components/profile/profile-bookmarks/ProfileBookmarks";
+import { useAuth } from "../contexts/AuthContext";
+import { useHistory } from "react-router-dom";
 
-const profileNav = [
-  { id: "123123e3e", title: "Resources", tabComponent: ProfileResources },
-  { id: "gewf23e3r", title: "Bookmarks", tabComponent: ProfileBookmarks },
-  { id: "gr24t23fw", title: "Logout" },
+const profileContent = [
+  { id: "123123e3e", title: "Resources" },
+  { id: "werwegwef", title: "Update Profile" },
+  { id: "gewf23e3r", title: "Bookmarks" },
+  { id: "r31rf31gf", title: "Logout" },
 ];
 
 const ProfilePage = () => {
-  const [currentTab, setCurrentTab] = useState("Resources");
-  const { currentUser, logout } = useAuth();
+  const { logout } = useAuth();
+  const [profileDisplay, setProfileDisplay] = useState("resources");
+  const history = useHistory();
 
-  if (!currentUser) return <Redirect to="/auth" />;
+  const handleDisplayChange = (e) => {
+    const display = e.target.innerHTML.toLowerCase();
+
+    if (display === "logout") {
+      logout();
+      history.push("/auth");
+    }
+
+    console.log(e);
+    console.log(display);
+    setProfileDisplay(display);
+  };
+
   return (
     <PPMain>
       <ProfileSideNav
-        profileContent={profileNav}
-        setCurrentTab={setCurrentTab}
-        currentUser={currentUser}
-        logout={logout}
+        profileContent={profileContent}
+        handleDisplayChange={handleDisplayChange}
       />
-      <ProfileHeader title={currentTab} />
-      {currentTab === "Resources" ? <ProfileResources /> : <ProfileBookmarks />}
+      <ProfileHeader title="Resources" />
+
+      {profileDisplay === "resources" && <ProfileResources />}
+      {profileDisplay === "update profile" && <ProfileUpdate />}
     </PPMain>
   );
 };
