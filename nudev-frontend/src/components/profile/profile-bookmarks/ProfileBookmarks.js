@@ -3,7 +3,7 @@ import { PRContainer, PRHeader } from "../../../styles/SharedStyles";
 const ProfileBookmarks = () => {
   return (
     <PRContainer>
-      <PRHeader>Bookmarks</PRHeader>
+      <PRHeader>Bookmarks.</PRHeader>
     </PRContainer>
   );
 };
