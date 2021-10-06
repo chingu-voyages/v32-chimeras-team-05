@@ -18,6 +18,7 @@ import {
   PRButton,
 } from "../../../styles/SharedStyles";
 import ResourceModal from "./ResourceModal";
+import { Link } from "react-router-dom";
 
 const ProfileResources = () => {
   const { currentUser } = useAuth();
@@ -55,29 +56,42 @@ const ProfileResources = () => {
   return (
     <PRContainer>
       <PRHeader>Created Resources:</PRHeader>
-      <PRList>
-        {resourceList
-          .filter((resource) => resource.userId === currentUser.uid)
-          .map((resource) => (
-            <PRListItem key={resource.id}>
-              {resource.name}
-              <PRListIcons id={resource.id}>
-                <FaEdit
-                  id={resource.id}
-                  resource={resource}
-                  onClick={handleShow}
-                  actionType={editResource}
-                />
-                <FaTrashAlt
-                  id={resource.id}
-                  onClick={(e) => {
-                    handleDelete(e);
-                  }}
-                />
-              </PRListIcons>
-            </PRListItem>
-          ))}
-      </PRList>
+      {resourceList.filter((resource) => resource.userId === currentUser.uid)
+        .length > 0 ? (
+        <PRList>
+          {resourceList
+            .filter((resource) => resource.userId === currentUser.uid)
+            .map((resource) => (
+              <PRListItem
+                key={resource.id}
+                as={Link}
+                to={`/resource/${resource.id}`}
+              >
+                {resource.name}
+                <PRListIcons id={resource.id}>
+                  {/* <FaEdit
+                    id={resource.id}
+                    resource={resource}
+                    onClick={handleShow}
+                    actionType={editResource}
+                  /> */}
+                  <FaTrashAlt
+                    id={resource.id}
+                    onClick={(e) => {
+                      handleDelete(e);
+                    }}
+                  />
+                </PRListIcons>
+              </PRListItem>
+            ))}
+        </PRList>
+      ) : (
+        <PRNoResources>
+          <h5>No Resources Created by User</h5>
+          <p>Click the Add Resource button below to create some resources</p>
+        </PRNoResources>
+      )}
+
       <PRButton onClick={handleShow}>Add Resource</PRButton>
       <ResourceModal
         show={showResourceModal}
@@ -95,11 +109,23 @@ const PRList = styled.ul`
   padding: 0;
 `;
 
+const PRNoResources = styled.section`
+  display: grid;
+  align-content: baseline;
+  grid-gap: 1em;
+  padding: 1em 0;
+  & h5 {
+    font-weight: 400;
+  }
+`;
+
 const PRListItem = styled.li`
   display: grid;
   grid-template-columns: auto 5em;
   padding: 1em;
   border: 1px solid ${colors.grey};
+  text-decoration: none;
+  color: ${colors.grey};
 `;
 
 const PRListIcons = styled.span`

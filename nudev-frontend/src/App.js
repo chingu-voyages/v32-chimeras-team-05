@@ -19,9 +19,16 @@ function App() {
       <AuthProvider>
         <Navigation />
         <Switch>
-          {Object.values(routesList).map(({ id, path, componentName }) => (
-            <Route exact key={id} path={path} component={componentName} />
-          ))}
+          {Object.values(routesList).map(
+            ({ id, path, relative, componentName }) => (
+              <Route
+                exact={relative ? false : true}
+                key={id}
+                path={path}
+                component={componentName}
+              />
+            )
+          )}
         </Switch>
         <Footer />
       </AuthProvider>

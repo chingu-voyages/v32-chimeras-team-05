@@ -1,3 +1,4 @@
+import Resource from "../components/resources/Resource";
 import About from "../pages/About";
 import AuthPage from "../pages/AuthPage";
 import Landing from "../pages/Landing";
@@ -47,5 +48,13 @@ export const routesList = {
     path: "/profile",
     componentName: ProfilePage,
     mainNav: true,
+  },
+  resource: {
+    id: 5,
+    title: "Resource",
+    path: "/resource/:id",
+    componentName: Resource,
+    mainNav: false,
+    relative: true,
   },
 };
