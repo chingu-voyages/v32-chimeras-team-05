@@ -44,11 +44,11 @@ const ProfileResources = () => {
     // setResourceList(newResourceList);
   };
 
-  const handleDelete = (e) => {
-    const id = e.currentTarget.parentNode.id;
+  // const handleDelete = (e) => {
+  //   const id = e.currentTarget.parentNode.id;
 
-    dispatch(deleteResource(id));
-  };
+  //   dispatch(deleteResource(id));
+  // };
 
   const handleClose = () => setShowResourceModal(false);
   const handleShow = () => setShowResourceModal(true);
@@ -75,12 +75,14 @@ const ProfileResources = () => {
                     onClick={handleShow}
                     actionType={editResource}
                   /> */}
-                  <FaTrashAlt
-                    id={resource.id}
-                    onClick={(e) => {
-                      handleDelete(e);
-                    }}
-                  />
+                  {/* <div className="btn-delete">
+                    <FaTrashAlt
+                      id={resource.id}
+                      onClick={(e) => {
+                        handleDelete(e);
+                      }}
+                    />
+                  </div> */}
                 </PRListIcons>
               </PRListItem>
             ))}
@@ -107,6 +109,7 @@ const PRList = styled.ul`
   align-content: baseline;
   grid-gap: 1em;
   padding: 0;
+  z-index: 2;
 `;
 
 const PRNoResources = styled.section`
@@ -132,6 +135,10 @@ const PRListIcons = styled.span`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
+  .btn-delete {
+    z-index: 500;
+    border: solid yellow;
+  }
 `;
 
 export default ProfileResources;

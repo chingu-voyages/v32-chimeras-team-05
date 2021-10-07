@@ -10,13 +10,25 @@ import {
 } from "../../styles/SharedStyles";
 import { FaBookmark, FaRegBookmark } from "react-icons/fa";
 import { useAuth } from "../../contexts/AuthContext";
+import { useDispatch } from "react-redux";
+
+import { deleteResource } from "../../redux/reducers/resourceReducer";
+import { FaTrashAlt } from "react-icons/fa";
 
 const Resource = () => {
   const { id } = useParams();
   const { currentUser } = useAuth();
   let history = useHistory();
+  const dispatch = useDispatch();
   const resources = useSelector((state) => state.resource);
   const resource = resources.find((resource) => resource.id === id);
+
+  const handleDelete = (e) => {
+    // const id = e.currentTarget.parentNode.id;
+
+    dispatch(deleteResource(id));
+  };
+
   if (!resource)
     return (
       <RContainer>
@@ -43,6 +55,14 @@ const Resource = () => {
           )}
         </RDetails>
         <PRButton onClick={() => history.push("/resources")}>Go back</PRButton>
+        <div className="btn-delete">
+          <FaTrashAlt
+            id={resource.id}
+            onClick={(e) => {
+              handleDelete(e);
+            }}
+          />
+        </div>
       </RContainer>
     </PageMain>
   );

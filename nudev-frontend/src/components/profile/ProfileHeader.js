@@ -5,7 +5,7 @@ const PHeader = styled.header`
   grid-area: header;
   justify-content: baseline;
   align-content: flex-end;
-  padding: 3em;
+  /* padding: 3em; */
 `;
 
 const PTitle = styled.h3``;

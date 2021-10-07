@@ -32,11 +32,12 @@ const PSNProfilePic = styled.div`
   display: grid;
   justify-content: center;
   padding-top: 3em;
+  padding-bottom: 2em;
   min-height: 30vh;
 `;
 
 const PSNav = styled.nav`
-  display: grid;
+  /* display: grid; */
   grid-gap: 1em;
   grid-area: sidenav;
   padding: 4em 2em;
@@ -45,7 +46,7 @@ const PSNav = styled.nav`
 const PSNavList = styled.div`
   display: grid;
   grid-gap: 1em;
-  align-content: space-evenly;
+  /* align-content: space-evenly; */
 `;
 const PSNavItem = styled.button`
   padding: 1em;

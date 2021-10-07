@@ -36,12 +36,13 @@ export const initializeResources = () => {
   };
 };
 
-export const createResource = (content, uid) => {
+export const createResource = (content) => {
   return async (dispatch) => {
-    const newResource = await resourceService.createNew(content);
+    const newResourceId = await resourceService.createNew(content);
+
     dispatch({
       type: "NEW_RESOURCE",
-      data: newResource,
+      data: { ...content, id: newResourceId },
     });
   };
 };
