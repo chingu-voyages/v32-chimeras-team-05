@@ -11,6 +11,7 @@ import {
 
 import SearchResults from "./SearchResults";
 import styled from "styled-components";
+import { set } from "react-hook-form";
 
 const Search = () => {
   const resources = useSelector((state) => state.resource);
@@ -19,6 +20,11 @@ const Search = () => {
   const [tagArray, setTagArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPosts, setFilteredPosts] = useState([...resources]);
+
+  useEffect(() => {
+    setFilteredPosts([...resources]);
+    return () => {};
+  }, [resources]);
 
   useEffect(() => {
     const resultsSearchTerm = filterSearchTermHelper(resources, searchTerm);
@@ -60,10 +66,11 @@ const Search = () => {
 
       <SearchTags updateTagArray={updateTagArray} />
       <ResultsList>
-        {filteredPosts.map(
-          (post) =>
-            (post = <SearchResults key={String(post.id.$oid)} post={post} />)
-        )}
+        {filteredPosts &&
+          filteredPosts.map(
+            (post) =>
+              (post = <SearchResults key={String(post.id)} post={post} />)
+          )}
       </ResultsList>
     </SearchContainer>
   );
@@ -77,7 +84,7 @@ const ResultsList = styled.div`
   grid-gap: 1em;
   height: 65vh;
   align-content: flex-start;
-  overflow-y: scroll;
+  /* overflow-y: hidden; */
 `;
 
 export default Search;
